@@ -1,0 +1,46 @@
+<%
+    var githubUrl =
+    'https://github.com/theme-suka/docs/tree/master/source/' +
+    page.path.replace(/\.html$/, '.md');
+%>
+
+<% var toc_obj = toc(page.content, {
+    class: 'post-toc',
+    list_number: false,
+}) %>
+
+<div class="docs-header">
+    <div class="docs-header-wrapper">
+        <div class="title-wrapper">
+            <h1 class="docs-header-title mb-1"><%- page.title %></h1>
+            <% if (page.description) { %>
+                <p class="h4 mb-2"><%- page.description %></p>
+            <% } %>
+        </div>
+        <span class="label label-rounded bg-dark mt-2">
+            <a class="docs-github" href="<%- githubUrl %>" target="_blank"><%- __('github') %></a>
+        </span>
+    </div>
+</div>
+
+<div class="docs-content">
+    <div class="columns">
+        <div class="column col-9 col-lg-12 docs-content-section">
+            <div class="container px-0">
+                <div id="post-content">
+                    <%- page.content %>
+                </div>
+            </div>
+        </div>
+        <div class="column col-3 hide-lg docs-toc-section">
+            <div class="container px-0">
+                <div id="post-toc">
+                    <% if(toc_obj.length > 0) { %>
+                        <p class="h4 text-bold"><%- __('toc') %></p>
+                        <%- toc_obj %>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
