@@ -27,6 +27,11 @@
     <meta property="og:image" content="<% url_for('assets/img/hexo-theme-suka.png') %>">
 </head>
 
+<%
+    const en = page.path.indexOf('en') == -1;
+%>
+
+
 <body>
     <header class="pt-2 pb-2">
         <div class="container grid-lg navbar pt-2 pb-2">
@@ -38,8 +43,11 @@
                 <a href="https://theme.suka.moe" class="btn btn-link">Suka Theme</a>
             </section>
             <section class="navbar-section">
-                <a href="<%- url_for('en') %>" class="btn btn-link navbar-link">English</a>
-                <a href="<%- url_for('/') %>" class="btn btn-link navbar-link">简体中文</a>
+                <% if (en === true) { %>
+                    <a href="<%- url_for(page.path).replace('docs', 'docs/en').replace('index.html', '') %>" class="btn btn-link navbar-link">English</a>
+                <% } else if (en === false) { %>
+                    <a href="<%- url_for(page.path).replace('docs/en', 'docs').replace('index.html', '') %>" class="btn btn-link navbar-link">简体中文</a>
+                <% } %>
             </section>
         </div>
     </header>
