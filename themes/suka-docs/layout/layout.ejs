@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spectre.css@0.5.3/dist/spectre.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spectre.css@0.5.3/dist/spectre-exp.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spectre.css@0.5.3/dist/spectre-icons.min.css">
-    <link rel="stylesheet" href="<%- url_for('style.css') %>">
-    <link rel="stylesheet" href="<%- url_for('markdown.css') %>">
+    <link rel="stylesheet" href="<%- url_for('style.min.css') %>">
+    <link rel="stylesheet" href="<%- url_for('markdown.min.css') %>">
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/github-markdown-css@2.10.0/github-markdown.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@0.1.0/source/lib/prism/prism-line-numbers.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@0.1.0/source/lib/prism/prism-default.min.css">
@@ -55,8 +55,14 @@
             <div class="container px-0">
             <%- body %>
             </div>
+            <footer>
+                <p>Designed and built with <span class="text-error">♥</span> by <a href="https://suka.moe" target="_blank">Sukka</a>. Licensed under the <a href="https://github.com/theme-suka/docs/blob/master/LICENSE" target="_blank">GPL V3 License</a>.</p>
+            </footer>
         </div>
     </div>
+
+    <script src="<%- url_for('local-search.min.js') %>"></script>
+    <script>searchFunc('<%- url_for('search.json') %>')</script>
 </body>
 
 </html>

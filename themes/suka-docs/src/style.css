@@ -107,7 +107,7 @@ a.navbar-link:hover {
     bottom: 1.5rem;
     -webkit-overflow-scrolling: touch;
     overflow-y: auto;
-    padding: .5rem 1rem;
+    padding: 1rem 1rem;
     position: fixed;
     top: 3.5rem;
     width: 12rem;
@@ -121,6 +121,7 @@ a.navbar-link:hover {
 
 .off-canvas .off-canvas-content {
     padding: 0 !important;
+    min-height: 100vh;
 }
 
 .docs-header-wrapper {
@@ -172,7 +173,6 @@ a.navbar-link:hover {
     }
 }
 
-
 .docs-toc-section {
     padding: .5rem 1rem;
 }
@@ -204,4 +204,48 @@ a.navbar-link:hover {
     z-index: 0;
     display: inline-block;
     text-align: left;
+}
+
+footer {
+    color: #acb3c2;
+    padding: .5rem .5rem 1.5rem .5rem;
+    margin-left: 0;
+    max-width: 800px;
+    padding-bottom: 1.5rem;
+    text-align: center
+}
+
+footer a,
+footer a:focus,
+footer a:hover,
+footer a:visited {
+    color: #667189;
+}
+
+#search-result {
+    padding: .2rem 0;
+}
+
+#search-result .tile {
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    border-bottom: .05rem solid #e7e9ed;
+}
+
+.search-result-title {
+    margin-bottom: .25rem;
+    font-size: .85rem
+}
+
+.saerch-result-date {
+    padding-right: .4rem;
+    color: #444;
+}
+
+.search-result-summary {
+    font-size: .7rem;
+    line-height: 1rem !important;
+    max-height: 3rem;
+    overflow: hidden;
+    margin-bottom: 0;
 }
