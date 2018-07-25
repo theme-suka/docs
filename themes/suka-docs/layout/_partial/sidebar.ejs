@@ -1,3 +1,10 @@
+<%
+    const en = page.path.indexOf('en') == -1 ? '' : 'en/';
+    function i18n_url_for(uri) {
+        return config.root + en + uri
+    }
+%>
+
 <div class="docs-nav">
     <div class="docs-search has-icon-left">
         <i class="form-icon icon icon-search"></i>
@@ -6,7 +13,7 @@
     <div id="search-result"></div>
     <ul class="nav">
         <li class="nav-item">
-            <a href="#"><%- __('nav.start') %></a>
+            <a href="<%- i18n_url_for('') %>"><%- __('nav.start') %></a>
         </li>
         <li class="nav-item">
             <a href="#"><%- __('nav.config') %></a>
@@ -15,7 +22,7 @@
             <a href="#"><%- __('nav.service') %></a>
         </li>
         <li class="nav-item">
-            <a href="#"><%- __('nav.expert') %></a>
+            <a href="<%- i18n_url_for('expert/') %>"><%- __('nav.expert') %></a>
         </li>
         <li class="nav-item">
             <a href="#"><%- __('nav.compose') %></a>
