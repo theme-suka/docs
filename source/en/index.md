@@ -54,7 +54,7 @@ cd themes/suka
 npm install --production
 ```
 
-Then you need to make a copy of `_config.example.yml` and rename it to `_config.yml`.
+Then you need to make a copy of `_config.example.yml` and rename the copy to `_config.yml`.
 
 ```bash
 cp -i _config.example.yml _config.yml
@@ -64,4 +64,85 @@ As the theme is developing, the theme config template will changes. It will avoi
 
 > If you are using git for your Hexo Project or you are using CI to generate and deploy your site, please read [Advanced Setting - CI] for more details.
 
-Now back to the root directory of your Hexo Project, then
+Now back to the root directory of your Hexo Project, then add these lines after `theme: landscape` in the `site config`.
+
+```yaml
+# Suka Theme config
+# Documents: https://theme.suka.moe/docs/
+suka_theme:
+  search:
+    path: search.json
+    field: post # Page | Post | All. Default post
+  prism:
+    line_number: true
+    theme: default
+```
+
+Now your `site config` should be something like:
+
+```yaml
+# Extensions
+## Plugins: http://hexo.io/plugins/
+## Themes: http://hexo.io/themes/
+theme: landscape
+
+# Suka Theme config
+# Documents: https://theme.suka.moe/docs/
+suka_theme:
+  search:
+    path: search.json
+    field: post # Page | Post | All. Default post
+  prism:
+    line_number: true
+    theme: default
+```
+
+# Enable "Suka"
+
+Change `theme` key's value to `suka`.
+
+```diff
+# Extensions
+## Plugins: http://hexo.io/plugins/
+## Themes: http://hexo.io/themes/
+-theme: landscape
++theme: suka
+
+# Suka Theme config
+# Documents: https://theme.suka.moe/docs/
+suka_theme:
+  search:
+    path: search.json
+    field: post # Page | Post | All. Default post
+  prism:
+    line_number: true
+    theme: default
+```
+
+# Start "Suka"
+
+Run the command below to start a local Hexo Server.
+
+```bash
+hexo s --debug
+```
+
+> During the service startup process, pay attention to whether there are any abnormal information. If you want to report problems, those information will help.
+
+When there were something like lines below
+
+```
+INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
+```
+
+It means Hexo has already run on your device, check https://localhost:400 at your browser.
+
+> If you have problem using "Suka", try search in the docs at sidebar or [add new issue](https://github.com/SukkaW/hexo-theme-suka/issues/new) at GitHub.
+
+# Update "Suka"
+
+If you downloaded "Suka" at GitHub release, then you should rename your theme directory from `suka` to `suka-old`, rename the new version "Suka" directory to `suka`. Then follow the guide at change log to migrate your configuration into newer one. After test you can delete `suka-old` directory.
+
+---
+
+If you used git to download "Suka", you need to backup your `theme config` (for example, rename it to `_config.old.yml`) then run `git pull` to update the "Suka". Now you have a new `_config.example.yml`, make a copy of it and rename the copy to `_config.yml`. Now you can migrate your old `theme config` from `_config.old.yml` to `_config.yml`. After the test you can delete `_config.old.yml`.

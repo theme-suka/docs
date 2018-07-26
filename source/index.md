@@ -49,7 +49,7 @@ git checkout {branch/tags name/commit hash}
 
 和其他主题不同，安装「Suka」需要额外的步骤；前往「Suka」主题目录下执行 `npm install --production` 指令安装「Suka」运行时所必须的依赖。
 
-```
+```bash
 cd themes/suka
 npm install --production
 ```
@@ -141,4 +141,8 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
 
 # 更新「Suka」
 
-如果你是在 版本发布页 下载并安装的「Suka」，那么
+如果你是在 版本发布页 下载并安装的「Suka」，那么你需要备份你的 `主题备份文件`，然后将旧的主题文件夹命名为 `suka-old`，将下载的新版本「Suka」重命名为 `suka`，根据更新日志的指导迁移旧的 `主题配置文件` 到新的 `主题配置文件` 中。测试通过后你可以将 `suka-old` 删除。
+
+----
+
+如果你使用 Git 安装的「Suka」，你可以直接在主题文件夹下运行 `git pull` 更新主题，并把备份之前的 `主题配置文件` 重命名为 `_config.old.yml`，复制一份 `_config.example.yml` 并重命名为 `_config.yml`。从 `_config.old.yml` 迁移你的配置到新的 `_config.yml`测试通过后你可以将 `_config.old.yml` 删除。
