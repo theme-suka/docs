@@ -173,6 +173,15 @@ a.navbar-link:hover {
     }
 }
 
+@media (max-width: 480px) {
+    .docs-content {
+        width: calc(100vw - 2rem)
+    }
+    .docs-content-section {
+        padding: 0 .8rem;
+    }
+}
+
 .docs-toc-section {
     padding: .5rem 1rem;
 }
