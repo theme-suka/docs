@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "10"
+git:
+  depth: 5
+  quiet: true
+install:
+  - npm i hexo-cli -g
+  - npm i
+script:
+  - hexo clean && hexo g
+  - gulp
+  - chmod +x ./deploy.sh
+  - ./deploy.sh > /dev/null
+cache:
+  directories:
+    - "node_modules"

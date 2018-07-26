@@ -82,8 +82,8 @@ Now your `site config` should be something like:
 
 ```yaml
 # Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
 theme: landscape
 
 # Suka Theme config
@@ -103,8 +103,8 @@ Change `theme` key's value to `suka`.
 
 ```diff
 # Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
 -theme: landscape
 +theme: suka
 

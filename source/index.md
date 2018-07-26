@@ -82,8 +82,8 @@ suka_theme:
 
 ```yaml
 # Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
 theme: landscape
 
 # Suka Theme config
@@ -105,8 +105,8 @@ suka_theme:
 
 ```diff
 # Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
 -theme: landscape
 +theme: suka
 
