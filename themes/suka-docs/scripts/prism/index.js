@@ -32,7 +32,7 @@ function unescape(str) {
 
 // Plugin settings
 const mode = 'preprocess';
-const line_number = true;
+const line_number = false;
 /**
  * Code transform for prism plugin.
  * @param {Object} data

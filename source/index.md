@@ -62,7 +62,7 @@ cp -i _config.example.yml _config.yml
 
 因为在主题的开发迭代过程中，`主题的配置文件` 很有可能会有变动。这样可以避免使用 `git pull` 更新主题的用户出现冲突。
 
-> 如果你在使用 Git 管理你的 Hexo 站点工程文件，或者使用持续集成（CI）部署你的 Hexo 博客，请阅读 [进阶使用 - CI](#) 了解应该怎么办。
+> 如果你在使用 Git 管理你的 Hexo 站点目录，或者使用持续集成（CI）部署你的 Hexo 博客，请阅读 [进阶使用 - 使用 Git 管理 Hexo](http://localhost:4000/docs/expert/#%E4%BD%BF%E7%94%A8-Git-%E7%AE%A1%E7%90%86-Hexo) 了解应该怎么办。
 
 然后回到站点根目录，打开 `站点配置文件`，复制下述内容并添加到 `站点配置文件` 中 `theme: landscape` 之后。
 

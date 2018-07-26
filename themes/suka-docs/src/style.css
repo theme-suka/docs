@@ -187,7 +187,7 @@ a.navbar-link:hover {
 }
 
 #post-toc {
-    line-height: .85rem;
+    line-height: .8rem;
 }
 
 #post-toc a {
@@ -196,6 +196,7 @@ a.navbar-link:hover {
 
 #post-toc>ol {
     margin-top: 1.5rem !important;
+    font-size: .7rem
 }
 
 #post-toc ol {
@@ -203,6 +204,10 @@ a.navbar-link:hover {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0.8rem;
+}
+
+#post-toc li {
+    margin-top: .2rem;
 }
 
 #post-toc>ol,
