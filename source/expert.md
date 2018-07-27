@@ -58,7 +58,7 @@ https://theme.suka.moe https://github.com/SukkaW/hexo-theme-suka
 
 ```yaml
 style_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@0.2.0/source/css/style.min.css
-local_search_js: `https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@0.2.0/source/js/local-search.min.js
+local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@0.2.0/source/js/local-search.min.js
 ```
 
 ## Spectre.css 0.5.3
