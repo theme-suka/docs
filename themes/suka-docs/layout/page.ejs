@@ -1,7 +1,7 @@
 <%
+    const en = page.path.indexOf('en') == -1 ? '' : '/en';
     var githubUrl =
-    'https://github.com/theme-suka/docs/tree/master/source/' +
-    page.path.replace(/\.html$/, '.md');
+    'https://github.com/theme-suka/docs/tree/master/source/' + page.source
 %>
 
 <% var toc_obj = toc(page.content, {
