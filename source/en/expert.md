@@ -147,10 +147,12 @@ If you have already enabled HTTPS to your site, and add Service Worker to your s
 
 You should before make your site a PWA. Learn [What is Web App Manifest at MDN](https://developer.mozilla.org/en-US/docs/Web/Manifest). You can also generate a `manifest.json` online at [Web App Minifest Generator](https://app-manifest.firebaseapp.com/).
 
-Put `manifest.json` to your `source` directory in site directory, then find `pwa_manifest` in `theme config`:
+Put `manifest.json` to your `source` directory in site directory, then find `pwa_manifest` in "Head Information" of `theme config`:
 
 ```yaml
-pwa_manifest: path/to/manifest.json
+head:
+  ......
+  pwa_manifest: path/to/manifest.json
 ```
 
 # Open Search
@@ -170,8 +172,10 @@ Here are a basic Open Search Description File Template:
 </OpenSearchDescription>
 ```
 
-Fill in template and save as `opensearch.xml` to your `source` directory in site directory. Then find `open_search` in `theme config`, fill in with the address of your `opensearch.xml`
+Fill in template and save as `opensearch.xml` to your `source` directory in site directory. Then find `open_search` in in "Head Information" of `theme config`, fill in with the address of your `opensearch.xml`
 
 ```yaml
-open_search: path/to/opensearch.xml
+head:
+  ......
+  open_search: path/to/opensearch.xml
 ```
