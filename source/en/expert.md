@@ -1,5 +1,5 @@
 ---
-title: Advanced Settings
+title: Advanced Using
 permalink: /en/expert/
 description: Don't try what you about to see at home. These are for experts.
 ---

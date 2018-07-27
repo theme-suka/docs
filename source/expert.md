@@ -1,5 +1,5 @@
 ---
-title: 进阶设定
+title: 进阶使用
 description: 以下部分可能影响到「Suka」主题的正常运作！
 permalink: /expert/
 ---
@@ -150,7 +150,9 @@ busuanzi: https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@2.3/bsz.pure.mini.js
 将 `manifest.json` 放置在站点的 `source` 目录中，并在 `主题配置文件` 中找到 `pwa_manifest`，配置你的 `manifest.json` 的地址：
 
 ```yaml
-pwa_manifest: path/to/manifest.json
+head:
+  ......
+  pwa_manifest: path/to/manifest.json
 ```
 
 # Open Search
@@ -173,5 +175,7 @@ pwa_manifest: path/to/manifest.json
 然后将文件保存为 `opensearch.xml` 后放置在站点的 `source` 目录中，并在 `主题配置文件` 中找到 `open_search`，配置你的 `opensearch.xml` 的地址：
 
 ```yaml
-open_search: path/to/opensearch.xml
+head:
+  ......
+  open_search: path/to/opensearch.xml
 ```
