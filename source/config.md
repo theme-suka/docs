@@ -244,3 +244,59 @@ post:
 **line_number**
 
 是否在 ToC 中显示行号。
+
+----
+
+定位到 `站点配置文件`
+
+# 「Suka」内置插件设置
+
+## 本地搜索
+
+```yaml
+suka_theme:
+  search:
+    path: search.json # 生成索引文件的位置
+    field: post # Page | Post | All
+```
+
+`field` 设置搜索索引文件包含的范围，可以仅生成独立页面或文章的索引，也可以同时生成包含两者的索引。
+
+## 代码高亮
+
+```yaml
+suka_theme:
+  .......
+  prism:
+    line_number: true # 是否启用行号
+    theme: default # 主题
+```
+
+「Suka」支持以下的 Prism 代码高亮主题
+
+- a11y-dark
+- atom-dark
+- base16-ateliersulphurpool.light
+- cb
+- coy
+- darcula
+- dark
+- default
+- duotone-dark
+- duotone-earth
+- duotone-forest
+- duotone-light
+- duotone-sea
+- duotone-space
+- funky
+- ghcolors
+- hopscotch
+- okaidia
+- pojoaque
+- solarizedlight
+- tomorrow
+- twilight
+- vs
+- xonokai
+
+> 如果你在 `vendors` 中有关配置里为 Prism 设置了 CDN，将会覆盖这里的 theme 的设定。

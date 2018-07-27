@@ -5,9 +5,9 @@ permalink: /service/
 
 # 评论系统
 
-「Suka」支持多达 6 种的评论系统，它们分别是 DISQUS、搜狐畅言、来必力、Gitment、Gitalk 和 Valine
+「Suka」支持多达 7 种的评论系统，它们分别是 DISQUS（支持三种使用方式）、搜狐畅言、来必力、Gitment、Gitalk 和 Valine
 
-它们分别对应的键值是 `disqus` `disqus_click` `disqus_proxy` `changyan` `livere` `gitment` `gitalk` `valine`，将你想启用的评论系统的键值填写在 `use` 中，然后找到对应评论系统的配置位置。
+它们分别对应的键值是 `disqus` `disqus_click` `disqus_proxy` `changyan` `livere` `gitment` `gitalk` `valine` `wildfire`，将你想启用的评论系统的键值填写在 `use` 中，然后找到对应评论系统的配置位置。
 
 ## DISQUS
 
@@ -178,3 +178,81 @@ comment:
 
 请仔细阅读 [WildFire 的文档](https://wildfire.js.org) 以知晓如何启用、填充上述上述参数。
 
+# 站点访问统计
+
+```yaml
+analytics:
+  google_site_id:
+  gtags_site_id:
+  baidu_site_id:
+  cnzz_site_id:
+```
+
+上面分别对应四种站点访问统计方式：
+
+- Google 传统的 `analytics.js` 统计方式
+- Google 新的 `Tag Manager` 统计方式。这种方式需要加载更大更多的文件。
+- 百度统计
+- CNZZ 统计
+
+## Google
+
+https://analytics.google.com
+
+登陆 Google Analytics 管理后台，找到你的站点 - 媒体资源设置，找到 `跟踪 ID`，一般是以 `UA-` 开头。
+根据你想使用的方式，将 `跟踪 ID` 填写到 `google_site_id` 或 `gtags_site_id` 中。
+
+## 百度统计
+
+http://tongji.baidu.com
+
+登陆百度统计后台，定位到代码获取页面，应该会提供类似如下形式的代码：
+
+```html
+<script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?{这一长串就是你的 ID}';
+    var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+```
+
+把那一长串 ID 设置在 `baidu_site_id` 中。
+
+## CNZZ
+
+CNZZ 已经被友盟（阿里）收购，下面是最新的官网地址
+
+https://web.umeng.com
+
+登陆 CNZZ 后台，找到代码安装页面，应该会提供类似如下形式的代码：
+
+```html
+<script src="//s95.cnzz.com/z_stat.php?id=<%= theme.analytics.cnzz_site_id %>&web_id={你的站点 ID}" language="JavaScript"></script>
+```
+
+把那一长串 ID 设置在 `cnzz_site_id` 中。
+
+> 默认脚本生成的内容会产生“站长统计”几个字，「Suka」将其隐藏了起来。
+
+# 不蒜子
+
+https://busuanzi.ibruce.info
+
+```yaml
+busuanzi:
+  enable: true # true | false 是否启用不蒜子访问统计
+  # Site views analytics support either pv or uv
+  # will be show at footer
+  site:
+    enable: true # 是否在首页显示
+    type: pv # pv | uv 统计访问次数还是访问人数
+  # Post views analytics
+  # will be show at post header info
+  post_pv:
+    enable: true # 是否在文章页面中显示
+```
+
+如果你同时将 `site.enable` `post_pv.enable` 设置为 `false`，不蒜子将仅作记录而不会在页面上显示。
