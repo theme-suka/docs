@@ -2,51 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://theme.suka.moe/docs//service/index.html</loc>
+    
+    <lastmod>2018-07-27T14:08:22.549Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://theme.suka.moe/docs//config/index.html</loc>
     
-    <lastmod>2018-07-27T13:51:14.729Z</lastmod>
+    <lastmod>2018-07-27T14:08:22.545Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://theme.suka.moe/docs//dev/index.html</loc>
     
-    <lastmod>2018-07-27T13:51:14.729Z</lastmod>
+    <lastmod>2018-07-27T14:08:22.545Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://theme.suka.moe/docs//expert/index.html</loc>
     
-    <lastmod>2018-07-27T13:51:14.729Z</lastmod>
+    <lastmod>2018-07-27T14:08:22.545Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://theme.suka.moe/docs/index.html</loc>
     
-    <lastmod>2018-07-27T13:51:14.729Z</lastmod>
+    <lastmod>2018-07-27T14:08:22.545Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://theme.suka.moe/docs//service/index.html</loc>
+    <loc>https://theme.suka.moe/docs//en/dev/index.html</loc>
     
-    <lastmod>2018-07-27T13:51:14.729Z</lastmod>
+    <lastmod>2018-07-27T14:08:22.545Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://theme.suka.moe/docs//en/expert/index.html</loc>
     
-    <lastmod>2018-07-27T13:51:14.729Z</lastmod>
+    <lastmod>2018-07-27T14:08:22.545Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://theme.suka.moe/docs/en/index.html</loc>
     
-    <lastmod>2018-07-27T13:51:14.729Z</lastmod>
+    <lastmod>2018-07-27T14:08:22.545Z</lastmod>
     
   </url>
   
