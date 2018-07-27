@@ -8,9 +8,35 @@ permalink: /expert/
 
 # 使用 Git 管理 Hexo
 
-正如在 [开始使用](./) 中所说，为了避免冲突，「Suka」中只有 `_config.example.yml`，`主题配置文件` 需要将 `_config.example.yml` 复制一份并重命名为 `_config.yml`。
+正如在 [开始使用](/docs/) 中所说，为了避免冲突，「Suka」中只有 `_config.example.yml`，`主题配置文件` 需要将 `_config.example.yml` 复制一份并重命名为 `_config.yml`。
 
 为了防止开发中 `_config.yml` 被推送进 Repo 中，我们将 `_config.yml` 写入了 `.gitignore`。这意味着在使用 Git 管理 Hexo 站点文件时，`主题配置文件` 并不会被 Push 到 Repo 中。此时你需要将 `_config.yml` 从 `.gitignore` 中删除，注意这有可能会造成使用 `git pull` 更新「Suka」时造成冲突。
+
+# 添加自定义代码
+
+「Suka」支持在 `</head>` 之前添加自定义 `font face`，统计代码等自定义代码，也支持在站点的 `</body>` 之前添加自定义代码。
+
+需要在站点目录下的 `source` 文件夹内创建一个名为 `_data` 的文件夹，并在文件内分别创建名为 `head.yml` `footer.yml` 的文件，并在其中加入你的自定义代码。`head.yml` 中的代码将被添加在 `</head>` 之前，`footer.tml` 中的代码将被添加在 `</body>` 之前。
+
+代码格式是：
+
+```yaml
+custom_head_1: '<!-- 一行自定义代码 -->'
+custom_head_2:
+  - '<!-- 多行自定义代码 -->'
+  - '<!-- 第二行 -->'
+  - '<!-- 第三行 -->'
+custom_head_3:
+  - '<!-- 这还是一行自定义代码 -->'
+```
+
+上述自定义代码的配置的渲染成 HTML 会像这样：
+
+```html
+<!-- 一行自定义代码 -->
+<!-- 多行自定义代码 --><!-- 第二行 --><!-- 第三行 -->
+<!-- 这还是一行自定义代码 -->
+```
 
 # 使用 CDN
 
@@ -20,7 +46,7 @@ permalink: /expert/
 - cdnjs：在除中国大陆地区外的全球范围内速度优秀
 - css.net：在中国大陆地区速度优秀，其它地区速度良好
 
-当然，你也可以用你自己的私有 CDN 加载它们。
+当然，你也可以用你自己的私有 CDN 加载它们；如果你不想使用 CDN、直接从你的站点加载，只需将相关配置留空即可。
 
 在 `主题配置文件` 中，找到 `vendors`。
 
@@ -38,8 +64,6 @@ local_search_js: `https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@0.2.0/sourc
 ## Spectre.css 0.5.3
 
 https://picturepan2.github.io/spectre/
-
-- spectre_css: `spectre.css`
 
 **jsDelivr**
 
@@ -63,17 +87,12 @@ spectre_css: https://cdnjs.loli.net/ajax/libs/spectre.css/0.5.3/spectre.min.css
 
 https://github.com/PrismJS/prism/ https://github.com/PrismJS/prism-themes
 
-- theme: Prism 主题 `prism-{theme name}.css`
-- line_number: Prism 行号插件 `prism-line-numbers.css`
-
 **jsDelivr**
 
 ```yaml
 theme: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@latestsource/lib/prism/prism-{theme-name}.css
 line_number: https://cdn.jsdelivr.net/npm/prismjs@1.15.0/plugins/line-numbers/prism-line-numbers.min.css
 ```
-
-Prism 其它主题： https://cdn.jsdelivr.net/npm/prism-themes@1.0.1/themes/prism-{theme-name}.min.css
 
 **cdnjs**
 
@@ -92,8 +111,6 @@ line_number: https://cdnjs.loli.net/ajax/libs/prism/1.15.0/plugins/line-numbers/
 ## Vanilla-Lazyload 8.9.0
 
 https://github.com/verlok/lazyload
-
-- lazyload: `vanilla-lazyload.js`
 
 **jsDelivr**
 
@@ -118,8 +135,6 @@ lazyload: https://cdnjs.loli.net/ajax/libs/vanilla-lazyload/8.9.0/lazyload.min.j
 https://busuanzi.ibruce.info
 
 > 默认从不蒜子官方 CDN 加载
-
-- busuanzi: `busuanzi.pure.mini.js`
 
 **jsDelivr**
 
@@ -149,9 +164,9 @@ pwa_manifest: path/to/manifest.json
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-    <ShortName>{Your Site Name}</ShortName>
-    <Description>{Your Site Description}</Description>
-    <Url type="text/html" template="{Your Search Page URL}?s={searchTerms}" />
+    <ShortName>[[Your Site Name]</ShortName>
+    <Description>[[Your Site Description]]</Description>
+    <Url type="text/html" template="[[Your Search Page URL]]?s={searchTerms}" />
 </OpenSearchDescription>
 ```
 
