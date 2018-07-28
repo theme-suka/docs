@@ -5,7 +5,7 @@ permalink: /service/
 
 # 评论系统
 
-「Suka」支持多达 7 种的评论系统，它们分别是 DISQUS（支持三种使用方式）、搜狐畅言、来必力、Gitment、Gitalk 和 Valine
+「Suka」支持多达 7 种的评论系统，它们分别是 DISQUS（支持三种使用方式）、搜狐畅言、来必力、Gitment、Gitalk、Valine 和 WildFire。
 
 它们分别对应的键值是 `disqus` `disqus_click` `disqus_proxy` `changyan` `livere` `gitment` `gitalk` `valine` `wildfire`，将你想启用的评论系统的键值填写在 `use` 中，然后找到对应评论系统的配置位置。
 
