@@ -50,15 +50,15 @@ custom_head_3:
 
 在 `主题配置文件` 中，找到 `vendors`。
 
-## Suka Theme 0.2.0
+## Suka Theme 1.0.0
 
 https://theme.suka.moe https://github.com/SukkaW/hexo-theme-suka
 
 **jsDelivr**
 
 ```yaml
-style_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@0.2.0/source/css/style.min.css
-local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@0.2.0/source/js/local-search.min.js
+style_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.0.0/source/css/style.min.css
+local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.0.0/source/js/local-search.min.js
 ```
 
 ## Spectre.css 0.5.3
