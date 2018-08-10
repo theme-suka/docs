@@ -241,18 +241,43 @@ https://web.umeng.com
 
 https://busuanzi.ibruce.info
 
-```yaml
-busuanzi:
-  enable: true # true | false 是否启用不蒜子访问统计
-  # Site views analytics support either pv or uv
-  # will be show at footer
-  site:
-    enable: true # 是否在首页显示
-    type: pv # pv | uv 统计访问次数还是访问人数
-  # Post views analytics
-  # will be show at post header info
-  post_pv:
-    enable: true # 是否在文章页面中显示
-```
+- enable: 是否启用不蒜子计数
+- site_uv: 站点访客统计
+  - enable: 是否在页面上展示站点访客统计数目
+  - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - divider: 站点访客统计展示 与 之后的内容之间的分隔符，支持 HTML，如果你不需要的话可以直接留空配置
+  - offset: 设置 不蒜子 的偏移量（如果你不知道这是干什么用的就保持为 0）
+- site_pv: 站点访问次数统计
+  - enable: 是否在页面上展示站点访问次数数目
+  - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - divider: 站点访问次数展示 与 之后的内容之间的分隔符，支持 HTML，如果你不需要的话可以直接留空配置
+  - offset: 设置 不蒜子 的偏移量（如果你不知道这是干什么用的就保持为 0）
+- post_pv: 每篇文章的访问次数统计
+  - enable: 是否在文章页面上展示页面访问次数数目
+  - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
 
-如果你同时将 `site.enable` `post_pv.enable` 设置为 `false`，不蒜子将仅作记录而不会在页面上显示。
+> 如果你同时将 `site_uv.enable` `site_pv.enable` `post_pv.enable` 设置为 `false`，不蒜子将仅作记录而不会在页面上显示。
+> 你可以使用在 `before` `after` 中使用 HTML Tag，比如用 `<br>` 换行。
+> 每个页面的不蒜子偏移量请在页面的 `front-matter` 中设置，详见 [开始创作 - Front Matter](https://theme.suka.moe/docs/compose/#Front-Matter)。
+
+# Valine 计数器（实验性）
+
+> 这项功能必须搭配 valine 评论系统使用
+
+- enable: 是否启用 valine 计数
+- site_pv: 站点访问次数统计
+  - enable: 是否在页面上展示站点访问次数数目
+  - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - divider: 站点访问次数展示 与 之后的内容之间的分隔符，支持 HTML，如果你不需要的话可以直接留空配置
+- index_post_pv: 在文章列表页面展示每篇文章的访问次数
+  - enable: 是否在文章列表页面展示每篇文章的访问次数
+  - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+- post_pv: 每篇文章的访问次数统计
+  - enable: 是否在文章页面上展示页面访问次数数目
+  - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
