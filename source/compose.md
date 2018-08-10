@@ -25,5 +25,4 @@ hexo new <title>
 |:--            |:--                 |:--           |
 | `thumbnail`   | 文章缩略图地址       |              |
 | `toc`         | 是否显示 TOC        | true         |
-
-
+| `busuanzi_offset` | 当前页面的不蒜子偏移量 | 0      |
