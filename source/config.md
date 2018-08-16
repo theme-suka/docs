@@ -17,6 +17,7 @@ permalink: /config/
 - small: 网站的 favicon，要求是 png 格式、16x16 大小
 - medium: 网站的 favicon，要求是 png 格式、32x32 大小
 - apple_touch_icon: 将会显示在 iOS 上，要求是 png 格式，大小在 128px 到 192px 之间
+- large: 网站的 favicon，要求是 png 格式、192x192 大小
 - safari_pinned_tab: 将会显示在 MBP Touchbar 上，最好是 svg 格式
 
 > 你可以在 [这里](https://realfavicongenerator.net) 生成上述所需的 favicon。如果你没有上述 favicon 中的一种或其中几种，只需要将对应配置留空即可。
@@ -246,59 +247,3 @@ post:
 **line_number**
 
 是否在 ToC 中显示行号。
-
-----
-
-# 「Suka」内置插件设置
-
-定位到 `站点配置文件`
-
-## 本地搜索
-
-```yaml
-suka_theme:
-  search:
-    path: search.json # 生成索引文件的位置
-    field: post # Page | Post | All
-```
-
-`field` 设置搜索索引文件包含的范围，可以仅生成独立页面或文章的索引，也可以同时生成包含两者的索引。
-
-## 代码高亮
-
-```yaml
-suka_theme:
-  .......
-  prism:
-    line_number: true # 是否启用行号
-    theme: default # 主题
-```
-
-「Suka」支持以下的 Prism 代码高亮主题
-
-- a11y-dark
-- atom-dark
-- base16-ateliersulphurpool.light
-- cb
-- coy
-- darcula
-- dark
-- default
-- duotone-dark
-- duotone-earth
-- duotone-forest
-- duotone-light
-- duotone-sea
-- duotone-space
-- funky
-- ghcolors
-- hopscotch
-- okaidia
-- pojoaque
-- solarizedlight
-- tomorrow
-- twilight
-- vs
-- xonokai
-
-> 如果你在 `vendors` 中有关配置里为 Prism 设置了 CDN，将会覆盖这里的 theme 的设定。
