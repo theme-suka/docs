@@ -237,6 +237,20 @@ https://web.umeng.com
 
 > 默认脚本生成的内容会产生“站长统计”几个字，「Suka」将其隐藏了起来。
 
+## 腾讯分析
+
+http://ta.qq.com
+
+> 腾讯已不再维护该服务，推荐使用腾讯移动分析
+
+登录腾讯分析控制台，登录并获取分析的 ID，填入 `tencent_site_id` 中。
+
+## 腾讯移动分析
+
+http://mta.qq.com
+
+登录腾讯分析控制台，登录并获取 `tencent_mta` 的 ID，填入 `tencent_mta_id` 中。
+
 # 不蒜子
 
 https://busuanzi.ibruce.info
