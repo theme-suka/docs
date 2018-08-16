@@ -1,5 +1,5 @@
 ---
-title: 内直插件
+title: 内置插件
 permalink: /plugin/
 ---
 
