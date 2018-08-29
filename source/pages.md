@@ -58,3 +58,47 @@ date:
 layout: tags
 ---
 ```
+
+# 画廊
+
+## 创建页面
+
+在站点根目录下的 `source` 文件夹内创建一个 `.md` 文件，文件名和路径根据个人喜好决定，会决定渲染生成以后页面的路径。
+
+在文件中写入以下内容：
+
+```markdown
+---
+title: Gallery
+date:
+layout: gallery
+---
+```
+
+## 添加数据
+
+在站点根目录目录下的 `source` 文件夹内创建一个名为 `_data` 的文件夹。
+
+然后在文件内创建一个名为 `gallery.yml` 的文件。
+
+单个图片的格式为：
+
+```yaml
+图片名称（唯一）:
+    full: # 完整图片 URL
+    thumb: # 缩略图 URL
+    descr: # 图片简介
+```
+
+比如这样：
+
+```yaml
+住み家:
+    full: https://i.jpg.dog/img/c78866c8fcab8e8edb20a9e37c3378b6.png
+    thumb: https://i.jpg.dog/img/c78866c8fcab8e8edb20a9e37c3378b6.md.png
+    descr: pixiv.net/i/70337807
+晩夏の灯　宵の風:
+    full: https://i.jpg.dog/img/8975f29cdb459b3a8b1b4f0c8fb0a7af.png
+    thumb: https://i.jpg.dog/img/8975f29cdb459b3a8b1b4f0c8fb0a7af.md.png
+    descr: pixiv.net/i/70352475
+```

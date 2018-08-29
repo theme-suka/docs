@@ -63,6 +63,8 @@ style_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.0/source/css/s
 local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.0/source/js/local-search.min.js
 hanabi_browser_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.0/source/js/hanabi-browser.min.js
 highlight_theme: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.0/source/css/highlight/[theme-name].min.css
+gallery_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.0/source/css/gallery.min.css
+gallery_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.0/source/js/gallery.min.js
 ```
 
 ## Spectre.css 0.5.3
