@@ -1,6 +1,7 @@
 ---
 title: 内置插件
 permalink: /plugin/
+description: Verison 1.1.1
 ---
 
 # 搜索
@@ -79,11 +80,12 @@ highlight:
   theme: # 代码高亮主题名称
 ```
 
-「Suka」内置了以下 77 种 Highlight.js 代码高亮主题：
+「Suka」内置了以下 83 种 Highlight.js 代码高亮主题：
 
 ```
 agate
 androidstudio
+an-old-hope
 arduino-light
 arta
 ascetic
@@ -115,6 +117,7 @@ color-brewer
 darcula
 dark
 darkula
+default
 docco
 dracula
 far
@@ -131,6 +134,7 @@ idea
 ir-black
 kimbie.dark
 kimbie.light
+lightfair
 magula
 mono-blue
 monokai-sublime
@@ -145,7 +149,9 @@ qtcreator_dark
 qtcreator_light
 railscasts
 rainbow
+routeros
 school-book
+shades-of-purple
 solarized-dark
 solarized-light
 solarized-white
@@ -156,6 +162,7 @@ tomorrow-night-eighties
 tomorrow-night
 tomorrow
 vs
+vs2015
 xcode
 xt256
 zenburn

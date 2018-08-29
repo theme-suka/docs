@@ -2,6 +2,7 @@
 title: 进阶使用
 description: 以下部分可能影响到「Suka」主题的正常运作！
 permalink: /expert/
+description: Verison 1.1.1
 ---
 
 > 「Suka」除了提供基本的主题设置和第三方服务以外，还提供了一些进阶的设定，让「Suka」更具定制性。 请注意，这些设定可能影响到「Suka」的正常运作，请务必先了解这些设定背后的相关知识。
@@ -52,17 +53,19 @@ custom_head_3:
 
 > 注意，在这里为代码高亮主题配置了 CDN 会覆盖前面你对代码高亮主题的设置！
 
-## Suka Theme 1.1.0
+## Suka Theme 1.1.1
 
 https://theme.suka.moe https://github.com/SukkaW/hexo-theme-suka
 
 **jsDelivr**
 
 ```yaml
-style_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.0/source/css/style.min.css
-local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.0/source/js/local-search.min.js
-hanabi_browser_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.0/source/js/hanabi-browser.min.js
-highlight_theme: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.0/source/css/highlight/[theme-name].min.css
+style_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.1/source/css/style.min.css
+local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.1/source/js/local-search.min.js
+hanabi_browser_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.1/source/js/hanabi-browser.min.js
+highlight_theme: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.1/source/css/highlight/[theme-name].min.css
+gallery_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.1/source/css/gallery.min.css
+gallery_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.1/source/js/gallery.min.js
 ```
 
 ## Spectre.css 0.5.3
@@ -87,7 +90,7 @@ spectre_css: https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.3/spectre.mi
 spectre_css: https://cdnjs.loli.net/ajax/libs/spectre.css/0.5.3/spectre.min.css
 ```
 
-## Prism 1.15.0 & Prism Theme 1.1.0
+## Prism 1.15.0 & Prism Theme 1.1.1
 
 https://github.com/PrismJS/prism/ https://github.com/PrismJS/prism-themes
 
