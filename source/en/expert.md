@@ -49,15 +49,15 @@ If you don't want to use CDN (load files directily from your site), simply leave
 
 Find `vendors:` in `theme config`
 
-## Suka Theme 1.1.0
+## Suka Theme 1.1.1
 
 https://theme.suka.moe https://github.com/SukkaW/hexo-theme-suka
 
 **jsDelivr**
 
 ```yaml
-style_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.0/source/css/style.min.css
-local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.0/source/js/local-search.min.js
+style_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.1/source/css/style.min.css
+local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.1/source/js/local-search.min.js
 ```
 
 ## Spectre.css 0.5.3
@@ -82,7 +82,7 @@ spectre_css: https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.3/spectre.mi
 spectre_css: https://cdnjs.loli.net/ajax/libs/spectre.css/0.5.3/spectre.min.css
 ```
 
-## Prism 1.15.0 & Prism Theme 1.1.0
+## Prism 1.15.0 & Prism Theme 1.1.1
 
 https://github.com/PrismJS/prism/ https://github.com/PrismJS/prism-themes
 
