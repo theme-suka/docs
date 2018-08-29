@@ -1,6 +1,7 @@
 ---
 title: 独立页面
 permalink: /pages/
+description: Verison 1.1.1
 ---
 
 # 友情链接

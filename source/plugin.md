@@ -1,6 +1,7 @@
 ---
 title: 内置插件
 permalink: /plugin/
+description: Verison 1.1.1
 ---
 
 # 搜索

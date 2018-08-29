@@ -1,6 +1,7 @@
 ---
 title: 主题配置
 permalink: /config/
+description: Verison 1.1.1
 ---
 
 定位到 `主题配置文件`
