@@ -2,7 +2,6 @@
 title: 进阶使用
 description: 以下部分可能影响到「Suka」主题的正常运作！
 permalink: /expert/
-description: Verison 1.1.1
 ---
 
 > 「Suka」除了提供基本的主题设置和第三方服务以外，还提供了一些进阶的设定，让「Suka」更具定制性。 请注意，这些设定可能影响到「Suka」的正常运作，请务必先了解这些设定背后的相关知识。
