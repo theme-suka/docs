@@ -5,15 +5,7 @@
 </code></pre><h1 id="Install-“Suka”"><a href="#Install-“Suka”" class="headerlink" title="Install “Suka”"></a>Install “Suka”</h1><p>When install “Suka” you need extra steps which is diffrent from other theme. First you need to enter themes directory and install dependencies for “Suka”.</p><pre class="highlight language-bash"><code class="language-bash"><span class="token function">cd</span> themes/suka
 <span class="token function">npm</span> <span class="token function">install</span> --production
 </code></pre><p>Then you need to make a copy of <code>_config.example.yml</code> and rename the copy to <code>_config.yml</code>.</p><pre class="highlight language-bash"><code class="language-bash"><span class="token function">cp</span> -i _config.example.yml _config.yml
-</code></pre><p>As the theme is developing, the theme config template will changes. It will avoid conflict for users who are using git pull to upgrade the theme.</p><blockquote><p>If you are using git for your Hexo Project or you are using CI to generate and deploy your site, please read [Advanced Setting - CI] for more details.</p></blockquote><p>Now back to the root directory of your Hexo Project, then add these lines after <code>theme: landscape</code> in the <code>site config</code>.</p><pre class="highlight language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># Suka Theme config</span>
-<span class="token comment" spellcheck="true"># Documents: https://theme.suka.moe/docs/</span>
-<span class="token key atrule">suka_theme</span><span class="token punctuation">:</span>
-  <span class="token key atrule">search</span><span class="token punctuation">:</span>
-    <span class="token key atrule">path</span><span class="token punctuation">:</span> search.json
-    <span class="token key atrule">field</span><span class="token punctuation">:</span> post <span class="token comment" spellcheck="true"># Page | Post | All. Default post</span>
-  <span class="token key atrule">prism</span><span class="token punctuation">:</span>
-    <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-    <span class="token key atrule">theme</span><span class="token punctuation">:</span> default
+</code></pre><p>As the theme is developing, the theme config template will changes. It will avoid conflict for users who are using git pull to upgrade the theme.</p><blockquote><p>If you are using git for your Hexo Project or you are using CI to generate and deploy your site, please read [Advanced Setting - CI] for more details.</p></blockquote><p>Now back to the root directory of your Hexo Project, then run:</p><pre class="highlight language-bash"><code class="language-bash"><span class="token function">cat</span> /themes/suka/site_config.yml <span class="token operator">>></span> _config.yml
 </code></pre><p>Now your <code>site config</code> should be something like:</p><pre class="highlight language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># Extensions</span>
 <span class="token comment" spellcheck="true">## Plugins: https://hexo.io/plugins/</span>
 <span class="token comment" spellcheck="true">## Themes: https://hexo.io/themes/</span>
@@ -23,9 +15,11 @@
 <span class="token comment" spellcheck="true"># Documents: https://theme.suka.moe/docs/</span>
 <span class="token key atrule">suka_theme</span><span class="token punctuation">:</span>
   <span class="token key atrule">search</span><span class="token punctuation">:</span>
+    <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
     <span class="token key atrule">path</span><span class="token punctuation">:</span> search.json
     <span class="token key atrule">field</span><span class="token punctuation">:</span> post <span class="token comment" spellcheck="true"># Page | Post | All. Default post</span>
   <span class="token key atrule">prism</span><span class="token punctuation">:</span>
+    <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
     <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
     <span class="token key atrule">theme</span><span class="token punctuation">:</span> default
 </code></pre><h1 id="Enable-“Suka”"><a href="#Enable-“Suka”" class="headerlink" title="Enable “Suka”"></a>Enable “Suka”</h1><p>Change <code>theme</code> key’s value to <code>suka</code>.</p><pre class="highlight language-diff"><code class="language-diff"># Extensions
