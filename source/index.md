@@ -64,18 +64,10 @@ cp -i _config.example.yml _config.yml
 
 > 如果你在使用 Git 管理你的 Hexo 站点目录，或者使用持续集成（CI）部署你的 Hexo 博客，请阅读 [进阶使用 - 使用 Git 管理 Hexo](/docs/expert/#%E4%BD%BF%E7%94%A8-Git-%E7%AE%A1%E7%90%86-Hexo) 了解应该怎么办。
 
-然后回到站点根目录，打开 `站点配置文件`，复制下述内容并添加到 `站点配置文件` 中 `theme: landscape` 之后。
+然后回到站点根目录，执行：
 
-```yaml
-# Suka Theme config
-# Documents: https://theme.suka.moe/docs/
-suka_theme:
-  search:
-    path: search.json
-    field: post # Page | Post | All. Default post
-  prism:
-    line_number: true
-    theme: default
+```bash
+cat /themes/suka/site_config.yml >> _config.yml
 ```
 
 现在你的 `站点配置文件` 应该是这样：
@@ -90,9 +82,11 @@ theme: landscape
 # Documents: https://theme.suka.moe/docs/
 suka_theme:
   search:
+    enable: false
     path: search.json
     field: post # Page | Post | All. Default post
   prism:
+    enable: false
     line_number: true
     theme: default
 ```
