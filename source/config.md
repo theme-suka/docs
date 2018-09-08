@@ -233,7 +233,7 @@ post:
   license: '本文使用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)</a> 协议'
 ```
 
-你也可以在文章的 `Front-Matter` 中覆盖这一设置，从而为你的部分文章设置独立的、不同的协议信息，详情可见 [开始创作 - Front Matter](#)
+你也可以在文章的 `Front-Matter` 中覆盖这一设置，从而为你的部分文章设置独立的、不同的协议信息，详情可见 [开始创作 - Front Matter](https://theme.suka.moe/docs/compose/#Front-Matter)
 
 # toc
 

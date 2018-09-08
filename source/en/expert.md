@@ -58,6 +58,10 @@ https://theme.suka.moe https://github.com/SukkaW/hexo-theme-suka
 ```yaml
 style_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.1/source/css/style.min.css
 local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.1/source/js/local-search.min.js
+hanabi_browser_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.1/source/js/hanabi-browser.min.js
+highlight_theme: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.1/source/css/highlight/[theme-name].min.css
+gallery_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.1/source/css/gallery.min.css
+gallery_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.1.1/source/js/gallery.min.js
 ```
 
 ## Spectre.css 0.5.3
@@ -134,6 +138,28 @@ lazyload: https://cdnjs.loli.net/ajax/libs/vanilla-lazyload/8.9.0/lazyload.min.j
 https://busuanzi.ibruce.info
 
 > If you leave it blank, it will load from busuanzi official CDN which only works in China.
+
+## Hanabi
+
+https://github.com/egoist/hanabi
+
+**jsDelivr**
+
+```yaml
+hanabi: https://cdn.jsdelivr.net/npm/hanabi@0.4.0
+```
+
+## Prettify 0.1.0
+
+> ATTENTION! It isn't the url for `run_prettify.js`!!
+
+## Prettify Theme
+
+**jsDelivr**
+
+```yaml
+prisim_theme: https://cdn.jsdelivr.net/npm/color-themes-for-google-code-prettify@2.0.4/dist/themes/{prettify-theme-name}.min.css
+```
 
 **jsDelivr**
 
