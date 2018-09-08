@@ -164,7 +164,20 @@ hanabi: https://cdn.jsdelivr.net/npm/hanabi@0.4.0
 
 ## Prettify Theme
 
-你可以在这里
+**jsDelivr**
+
+```yaml
+prisim_theme: https://cdn.jsdelivr.net/npm/color-themes-for-google-code-prettify@2.0.4/dist/themes/{prettify-theme-name}.min.css
+```
+
+# Fragment Cache
+
+Hexo 从 3.0 开始引入了 Fragment Cache 选项，可以加速 Hexo 站点构建的速度，但是可能会导致一些问题。
+「Suka」主题在 1.1.1 版本之前均强制开启 Fragment Cache，从 1.2.0 版本开始「Suka」提供了可配置选项 `theme.fragment_cache`，默认为 `false`。
+
+```yaml
+fragment_cache: false # true | false
+```
 
 # PWA Manifest
 
@@ -181,7 +194,7 @@ head:
 
 # Open Search
 
-「Suka」的本地搜索功能支持通过搜索串搜索，所以可以启用 Open Search。
+「Suka」的本地搜索功能支持通过搜索串搜索，在使用本地搜索时可以启用 Open Search。
 
 > 你可以在 [MDN](https://developer.mozilla.org/en-US/docs/Web/OpenSearch) 上或者 [OpenSearch 的项目主页](https://github.com/dewitt/opensearch) 中了解更多关于 OpenSearch。
 
@@ -196,7 +209,7 @@ head:
 </OpenSearchDescription>
 ```
 
-然后将文件保存为 `opensearch.xml` 后放置在站点的 `source` 目录中，并在 `主题配置文件` 中找到 `open_search`，配置你的 `opensearch.xml` 的地址：
+将上述内容中修改成你的站点信息，保存为 `opensearch.xml` 后放置在站点的 `source` 目录中，并在 `主题配置文件` 中找到 `open_search`，配置你的 `opensearch.xml` 的地址：
 
 ```yaml
 head:
