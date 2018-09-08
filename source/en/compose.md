@@ -26,3 +26,4 @@ Add a markdown file (`.md`) in `source/_posts` folder of your hexo project.
 | `thumbnail`   | The thumbnail url for post |                   |
 | `toc`         | Show TOC or not            | true              |
 | `busuanzi_offset` | Busuanzi Offset for current page | 0       |
+| `license`     | Override the configuration in theme config for current page | |

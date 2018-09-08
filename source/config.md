@@ -58,7 +58,7 @@ description: Verison 1.1.1
 
 2. 将 `xxxxxxxxxxxxxxxx` 字符串复制出来，填入 `主题配置文件` 中对应搜索引擎的设置中，站点重新部署以后即可通过验证。
 
-> 如果你使用了 [第三方服务 - 站点访问统计](http://localhost:4000/docs/service/#Google) 启用了 Google Analytics，可以直接在 Google Webmaster 验证，无需再次使用 html 标记验证。
+> 如果你使用了 [第三方服务 - 站点访问统计](https://theme.suka.moe/docs/service/#Google) 启用了 Google Analytics，可以直接在 Google Webmaster 验证，无需再次使用 html 标记验证。
 
 ## Footer
 
