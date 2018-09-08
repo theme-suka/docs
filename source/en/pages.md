@@ -1,6 +1,6 @@
 ---
 title: Pages
-permalink: /pages/
+permalink: /en/pages/
 description: Verison 1.2.0
 ---
 

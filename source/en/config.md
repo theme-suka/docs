@@ -1,6 +1,6 @@
 ---
 title: Theme Config
-permalink: /config/
+permalink: /en/config/
 description: Verison 1.2.0
 ---
 
