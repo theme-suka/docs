@@ -54,7 +54,7 @@ custom_head_3:
 
 ## Suka Theme 1.2.0
 
-https://theme.suka.moe https://github.com/SukkaW/hexo-theme-suka
+https://theme-suka.github.io https://github.com/SukkaW/hexo-theme-suka
 
 **jsDelivr**
 

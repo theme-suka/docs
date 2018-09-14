@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://theme.suka.moe/docs
+url: https://theme-suka.github.io/docs
 root: /docs/
 permalink: /:title/
 permalink_defaults:

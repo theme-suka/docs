@@ -276,7 +276,7 @@ https://busuanzi.ibruce.info
 
 > 如果你同时将 `site_uv.enable` `site_pv.enable` `post_pv.enable` 设置为 `false`，不蒜子将仅作记录而不会在页面上显示。
 > 你可以使用在 `before` `after` 中使用 HTML Tag，比如用 `<br>` 换行。
-> 每个页面的不蒜子偏移量请在页面的 `front-matter` 中设置，详见 [开始创作 - Front Matter](https://theme.suka.moe/docs/compose/#Front-Matter)。
+> 每个页面的不蒜子偏移量请在页面的 `front-matter` 中设置，详见 [开始创作 - Front Matter](https://theme-suka.github.io/docs/compose/#Front-Matter)。
 
 # Valine 计数器（实验性）
 

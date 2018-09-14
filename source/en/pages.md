@@ -37,7 +37,7 @@ You can add my blog as a link by adding:
 
 ```yaml
 "Sukka's Blog":
-    url: https://blog.suka.moe
+    url: https://blog.skk.moe
     img: https://secure.gravatar.com/avatar/979869bac8c7bd23fbd649064eabd48e?s=128
     text: "苏卡卡的有底洞"
 ```

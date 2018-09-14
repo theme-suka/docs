@@ -79,7 +79,7 @@ cat /themes/suka/site_config.yml >> _config.yml
 theme: landscape
 
 # Suka Theme config
-# Documents: https://theme.suka.moe/docs/
+# Documents: https://theme-suka.github.io/docs/
 suka_theme:
   search:
     enable: false
@@ -105,7 +105,7 @@ suka_theme:
 +theme: suka
 
 # Suka Theme config
-# Documents: https://theme.suka.moe/docs/
+# Documents: https://theme-suka.github.io/docs/
 suka_theme:
   search:
     path: search.json
