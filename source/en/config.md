@@ -58,7 +58,7 @@ After logged in the console of search engine, choose to use `<meta>` tag to fini
 
 The things like xxxxxxxxxxxxxxxxxxxxxxxxxxxx is your site_verification value.
 
-> If you use the google anylytics for your site by configure as [Third Party Services - Analytics](https://theme-suka.github.io/docs/en/service/#Google) mentioned, you can pass Google Webmaster Verification without any other action.
+> If you use the google anylytics for your site by configure as [Third Party Services - Analytics](https://theme-suka.skk.moe/docs/en/service/#Google) mentioned, you can pass Google Webmaster Verification without any other action.
 
 ## Footer
 
@@ -233,7 +233,7 @@ post:
   license: 'The page is under<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0 International</a>'
 ```
 
-You can also override the configuration for some specific posts by adding front-matter, see [Compose - Front Matter](https://theme-suka.github.io/docs/en/compose/#Front-Matter) for more details.
+You can also override the configuration for some specific posts by adding front-matter, see [Compose - Front Matter](https://theme-suka.skk.moe/docs/en/compose/#Front-Matter) for more details.
 
 # toc
 
@@ -243,7 +243,7 @@ Configuration for Table of Content
 
 Enable it or not.
 
-> If you want override the configuration for some specific posts you can add the related front-matter, see [Compose - Front Matter](https://theme-suka.github.io/docs/en/compose/#Front-Matter) for more details.
+> If you want override the configuration for some specific posts you can add the related front-matter, see [Compose - Front Matter](https://theme-suka.skk.moe/docs/en/compose/#Front-Matter) for more details.
 
 **line_number**
 

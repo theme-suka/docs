@@ -19,7 +19,7 @@ Here are the build status of them:
 
 ## Suka Website
 
-[![](https://travis-ci.org/theme-suka/theme-suka.github.io.svg?branch=raw)](https://travis-ci.org/theme-suka/theme-suka.github.io)
+[![](https://travis-ci.org/theme-suka/theme-suka.skk.moe.svg?branch=raw)](https://travis-ci.org/theme-suka/theme-suka.skk.moe)
 
 ## Suka Theme Docs
 

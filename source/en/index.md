@@ -79,7 +79,7 @@ Now your `site config` should be something like:
 theme: landscape
 
 # Suka Theme config
-# Documents: https://theme-suka.github.io/docs/
+# Documents: https://theme-suka.skk.moe/docs/
 suka_theme:
   search:
     enable: false
@@ -103,7 +103,7 @@ Change `theme` key's value to `suka`.
 +theme: suka
 
 # Suka Theme config
-# Documents: https://theme-suka.github.io/docs/
+# Documents: https://theme-suka.skk.moe/docs/
 suka_theme:
   search:
     path: search.json

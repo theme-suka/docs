@@ -1,6 +1,6 @@
 # Suka Docs
 
-[![Suka Theme](https://img.shields.io/badge/theme-Suka-5755d9.svg?style=flat-square)](https://theme-suka.github.io)
+[![Suka Theme](https://img.shields.io/badge/theme-Suka-5755d9.svg?style=flat-square)](https://theme-suka.skk.moe)
 [![Authoe](https://img.shields.io/badge/author-Sukka-b68469.svg?style=flat-square)](https://skk.moe)
 [![Hexo](https://img.shields.io/badge/hexo-3.7.1-0e83cd.svg?style=flat-square)](https://hexo.io)
 [![Nodejs](https://img.shields.io/badge/node.js-8.0%2B-43853d.svg?style=flat-square)](https://nodejs.org)
@@ -8,7 +8,7 @@
 [![GitHub license](https://img.shields.io/github/license/theme-suka/docs.svg?style=flat-square)](https://github.com/theme-suka/docs/blob/master/LICENSE)
 
 
-Repository for [Suka Theme](https://theme-suka.github.io)'s docs.
+Repository for [Suka Theme](https://theme-suka.skk.moe)'s docs.
 
 ## Intro
 
