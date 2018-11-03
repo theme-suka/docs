@@ -6,9 +6,9 @@ description: Verison 1.2.0
 
 # 评论系统
 
-「Suka」支持多达 7 种的评论系统，它们分别是 DISQUS（支持三种使用方式）、搜狐畅言、来必力、Gitment、Gitalk、Valine 和 WildFire。
+「Suka」支持多达 8 种的评论系统，它们分别是 DISQUS（支持三种使用方式）、搜狐畅言、来必力、Gitment、Gitalk、Valine、WildFire 和 Facebook Comment。
 
-它们分别对应的键值是 `disqus` `disqus_click` `disqus_proxy` `changyan` `livere` `gitment` `gitalk` `valine` `wildfire`，将你想启用的评论系统的键值填写在 `use` 中，然后找到对应评论系统的配置位置。
+它们分别对应的键值是 `disqus` `disqusjs` `disqus_proxy` `changyan` `livere` `gitment` `gitalk` `valine` `wildfire`，将你想启用的评论系统的键值填写在 `use` 中，然后找到对应评论系统的配置位置。
 
 ## DISQUS
 
@@ -42,7 +42,9 @@ comment:
     shortname: # 你的 Disqus shortname
 ```
 
-**Proxy 模式**
+## DisqusJS
+
+https://github.com/SukkaW/DisqusJS
 
 这个模式下，需要用户配置一个 `https://disqus.com/api/3.0/` 的反向代理，在评论基本模式中使用反代 API 获取评论内容（但是基本模式下仍然不能发表评论）。同时提供一个按钮切换到 Disqus 完整模式下以发表评论。
 
@@ -50,17 +52,18 @@ comment:
 
 ```yaml
 comment:
-  use: disqus_proxy
+  use: disqusjs
   ......
-  disqus_proxy:
-    shortname: # 你的 Disqus shortname
-    apikey: E8Uh5l5fHZ6gD8U3KycjAIAk46f68Zw7C6eW8WSjZvCLXebZ7p0r1yrYDrLilk2F # Disqus 公共 API Key
-    proxy: https://cors-anywhere.herokuapp.com/disqus.com/api/3.0/ # 你的 Disqus 反代地址。你需要反代 https://disqus.com/api/3.0/
+  disqusjs:
+    shortname:
+    siteName:
+    api:
+    apikey:
+    admin:
+    adminLabel:
 ```
 
-上述配置样例中我们使用了 Disqus 的公开 API Key。如果你想使用自己的私有 API Key，登陆 Disqus 后访问 [API - Application](https://disqus.com/api/applications/) 页面创建一个应用，创建后即可使用自己的 Application 的 API Key。请注意个人的 API Key 有 Rate Limit 限制。
-
-> 虽然在配置样例中我们使用了 Cors Anywhere 作为一个反代的例子。但是我们强烈不推荐你使用。Cors Anywhere 是为免费个人性质的站点提供服务的，不适合用于生产环境；在 **公开、平等、有序 的 网络审查 地区** 下的浏览者对 Heroku 的连通性并不比对 Disqus 的连通性好。
+具体配置请阅读 https://github.com/SukkaW/DisqusJS
 
 ## 搜狐畅言
 
@@ -140,7 +143,7 @@ https://valine.js.org
 
 ```yaml
 comment:
-  use: valine # 或者 gitment
+  use: valine
   ......
   valine:
     leancloud_appId: # leancloud application app id
@@ -162,9 +165,9 @@ https://wildfire.js.org
 
 ```yaml
 comment:
-  use: valine # 或者 gitment
+  use: wildfire
   ......
-  valine:
+  wildfire:
     database_provider: firebase # firebase or wilddog
     wilddog_site_id:
     firebase_api_key:
@@ -178,6 +181,27 @@ comment:
 ```
 
 请仔细阅读 [WildFire 的文档](https://wildfire.js.org) 以知晓如何启用、填充上述上述参数。
+
+## Facebook
+
+https://developers.facebook.com/docs/plugins/comments/
+
+```yaml
+comment:
+  use: facebook
+  facebook:
+    colorschme: light # light | dark
+    numposts: 10
+    orderby: social # social | reverse_time | time
+    # You can only fill in one of them below when configuring.
+    # If you fill in both of them then appid method will be used.
+    # Read facebook developer documents for more info:
+    # https://developers.facebook.com/docs/plugins/comments/#moderation-setup-instructions
+    admin_fb_appid:
+    admin_fb_username: # Currently "Suka" don't support more than one admin. You can open a new issue if you really need one.
+```
+
+请仔细阅读 [Facebook Comment Social Plugin](https://developers.facebook.com/docs/plugins/comments/#settings) 以知晓如何启用、填充上述上述参数。
 
 # 站点访问统计
 
