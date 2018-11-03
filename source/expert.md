@@ -50,15 +50,21 @@ custom_head_3:
 
 在 `主题配置文件` 中，找到 `vendors`。
 
-## Suka Theme 1.0.0
+> 注意，在这里为代码高亮主题配置了 CDN 会覆盖前面你对代码高亮主题的设置！
 
-https://theme.suka.moe https://github.com/SukkaW/hexo-theme-suka
+## Suka Theme 1.3.0
+
+https://theme-suka.skk.moe https://github.com/SukkaW/hexo-theme-suka
 
 **jsDelivr**
 
 ```yaml
-style_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.0.0/source/css/style.min.css
-local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.0.0/source/js/local-search.min.js
+style_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/css/style.min.css
+local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/js/local-search.min.js
+hanabi_browser_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/js/hanabi-browser.min.js
+highlight_theme: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/css/highlight/[theme-name].min.css
+gallery_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/css/gallery.min.css
+gallery_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/js/gallery.min.js
 ```
 
 ## Spectre.css 0.5.3
@@ -83,7 +89,7 @@ spectre_css: https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.3/spectre.mi
 spectre_css: https://cdnjs.loli.net/ajax/libs/spectre.css/0.5.3/spectre.min.css
 ```
 
-## Prism 1.15.0 & Prism Theme 1.0.1
+## Prism 1.15.0 & Prism Theme 1.1.1
 
 https://github.com/PrismJS/prism/ https://github.com/PrismJS/prism-themes
 
@@ -142,6 +148,37 @@ https://busuanzi.ibruce.info
 busuanzi: https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@2.3/bsz.pure.mini.js
 ```
 
+## Hanabi
+
+https://github.com/egoist/hanabi
+
+**jsDelivr**
+
+```yaml
+hanabi: https://cdn.jsdelivr.net/npm/hanabi@0.4.0
+```
+
+## Prettify 0.1.0
+
+> 注意！这不是 `run_prettify.js`！
+
+## Prettify Theme
+
+**jsDelivr**
+
+```yaml
+prisim_theme: https://cdn.jsdelivr.net/npm/color-themes-for-google-code-prettify@2.0.4/dist/themes/{prettify-theme-name}.min.css
+```
+
+# Fragment Cache
+
+Hexo 从 3.0 开始引入了 Fragment Cache 选项，可以加速 Hexo 站点构建的速度，但是可能会导致一些问题。
+「Suka」主题在 1.3.0 版本之前均强制开启 Fragment Cache，从 1.3.0 版本开始「Suka」提供了可配置选项 `theme.fragment_cache`，默认为 `false`。
+
+```yaml
+fragment_cache: false # true | false
+```
+
 # PWA Manifest
 
 如果你的站点启用了 HTTPS，并启用了 Service Worker，你就可以为你的站点启用 Progressive Web App（PWA）支持。
@@ -157,7 +194,7 @@ head:
 
 # Open Search
 
-「Suka」的本地搜索功能支持通过搜索串搜索，所以可以启用 Open Search。
+「Suka」的本地搜索功能支持通过搜索串搜索，在使用本地搜索时可以启用 Open Search。
 
 > 你可以在 [MDN](https://developer.mozilla.org/en-US/docs/Web/OpenSearch) 上或者 [OpenSearch 的项目主页](https://github.com/dewitt/opensearch) 中了解更多关于 OpenSearch。
 
@@ -172,7 +209,7 @@ head:
 </OpenSearchDescription>
 ```
 
-然后将文件保存为 `opensearch.xml` 后放置在站点的 `source` 目录中，并在 `主题配置文件` 中找到 `open_search`，配置你的 `opensearch.xml` 的地址：
+将上述内容中修改成你的站点信息，保存为 `opensearch.xml` 后放置在站点的 `source` 目录中，并在 `主题配置文件` 中找到 `open_search`，配置你的 `opensearch.xml` 的地址：
 
 ```yaml
 head:

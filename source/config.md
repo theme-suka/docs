@@ -1,6 +1,7 @@
 ---
 title: 主题配置
 permalink: /config/
+description: Verison 1.3.0
 ---
 
 定位到 `主题配置文件`
@@ -17,6 +18,7 @@ permalink: /config/
 - small: 网站的 favicon，要求是 png 格式、16x16 大小
 - medium: 网站的 favicon，要求是 png 格式、32x32 大小
 - apple_touch_icon: 将会显示在 iOS 上，要求是 png 格式，大小在 128px 到 192px 之间
+- large: 网站的 favicon，要求是 png 格式、192x192 大小
 - safari_pinned_tab: 将会显示在 MBP Touchbar 上，最好是 svg 格式
 
 > 你可以在 [这里](https://realfavicongenerator.net) 生成上述所需的 favicon。如果你没有上述 favicon 中的一种或其中几种，只需要将对应配置留空即可。
@@ -56,7 +58,7 @@ permalink: /config/
 
 2. 将 `xxxxxxxxxxxxxxxx` 字符串复制出来，填入 `主题配置文件` 中对应搜索引擎的设置中，站点重新部署以后即可通过验证。
 
-> 如果你使用了 [第三方服务 - 站点访问统计](http://localhost:4000/docs/service/#Google) 启用了 Google Analytics，可以直接在 Google Webmaster 验证，无需再次使用 html 标记验证。
+> 如果你使用了 [第三方服务 - 站点访问统计](https://theme-suka.skk.moe/docs/service/#Google) 启用了 Google Analytics，可以直接在 Google Webmaster 验证，无需再次使用 html 标记验证。
 
 ## Footer
 
@@ -231,7 +233,7 @@ post:
   license: '本文使用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)</a> 协议'
 ```
 
-你也可以在文章的 `Front-Matter` 中覆盖这一设置，从而为你的部分文章设置独立的、不同的协议信息，详情可见 [开始创作 - Front Matter](#)
+你也可以在文章的 `Front-Matter` 中覆盖这一设置，从而为你的部分文章设置独立的、不同的协议信息，详情可见 [开始创作 - Front Matter](https://theme-suka.skk.moe/docs/compose/#Front-Matter)
 
 # toc
 
@@ -246,59 +248,3 @@ post:
 **line_number**
 
 是否在 ToC 中显示行号。
-
-----
-
-# 「Suka」内置插件设置
-
-定位到 `站点配置文件`
-
-## 本地搜索
-
-```yaml
-suka_theme:
-  search:
-    path: search.json # 生成索引文件的位置
-    field: post # Page | Post | All
-```
-
-`field` 设置搜索索引文件包含的范围，可以仅生成独立页面或文章的索引，也可以同时生成包含两者的索引。
-
-## 代码高亮
-
-```yaml
-suka_theme:
-  .......
-  prism:
-    line_number: true # 是否启用行号
-    theme: default # 主题
-```
-
-「Suka」支持以下的 Prism 代码高亮主题
-
-- a11y-dark
-- atom-dark
-- base16-ateliersulphurpool.light
-- cb
-- coy
-- darcula
-- dark
-- default
-- duotone-dark
-- duotone-earth
-- duotone-forest
-- duotone-light
-- duotone-sea
-- duotone-space
-- funky
-- ghcolors
-- hopscotch
-- okaidia
-- pojoaque
-- solarizedlight
-- tomorrow
-- twilight
-- vs
-- xonokai
-
-> 如果你在 `vendors` 中有关配置里为 Prism 设置了 CDN，将会覆盖这里的 theme 的设定。

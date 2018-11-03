@@ -19,7 +19,7 @@ permalink: /dev/
 
 ## Suka Website
 
-[![](https://travis-ci.org/theme-suka/theme-suka.github.io.svg?branch=raw)](https://travis-ci.org/theme-suka/theme-suka.github.io)
+[![](https://travis-ci.org/theme-suka/theme-suka.skk.moe.svg?branch=raw)](https://travis-ci.org/theme-suka/theme-suka.skk.moe)
 
 ## Suka Theme Docs
 
@@ -41,4 +41,4 @@ https://github.com/SukkaW/hexo-theme-suka/blob/canary/CONTRIBUTING.zh-cn.md
   - `build`: 使用异步方式同时执行上述任务
   - `watch`: 监听 `src` 目录，当文件改动时触发 `build`
   - `default`: `build`
-- 使用 [theme-suka/hexo-theme-unit-test](https://github.com/theme-suka/hexo-theme-unit-test) 执行单元测试
+- 「Suka」使用 [theme-suka/hexo-theme-unit-test](https://github.com/theme-suka/hexo-theme-unit-test) 执行单元测试

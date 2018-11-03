@@ -1,13 +1,14 @@
 ---
 title: 第三方服务
 permalink: /service/
+description: Verison 1.3.0
 ---
 
 # 评论系统
 
-「Suka」支持多达 7 种的评论系统，它们分别是 DISQUS（支持三种使用方式）、搜狐畅言、来必力、Gitment、Gitalk、Valine 和 WildFire。
+「Suka」支持多达 8 种的评论系统，它们分别是 DISQUS（支持三种使用方式）、搜狐畅言、来必力、Gitment、Gitalk、Valine、WildFire 和 Facebook Comment。
 
-它们分别对应的键值是 `disqus` `disqus_click` `disqus_proxy` `changyan` `livere` `gitment` `gitalk` `valine` `wildfire`，将你想启用的评论系统的键值填写在 `use` 中，然后找到对应评论系统的配置位置。
+它们分别对应的键值是 `disqus` `disqusjs` `disqus_proxy` `changyan` `livere` `gitment` `gitalk` `valine` `wildfire`，将你想启用的评论系统的键值填写在 `use` 中，然后找到对应评论系统的配置位置。
 
 ## DISQUS
 
@@ -41,7 +42,9 @@ comment:
     shortname: # 你的 Disqus shortname
 ```
 
-**Proxy 模式**
+## DisqusJS
+
+https://github.com/SukkaW/DisqusJS
 
 这个模式下，需要用户配置一个 `https://disqus.com/api/3.0/` 的反向代理，在评论基本模式中使用反代 API 获取评论内容（但是基本模式下仍然不能发表评论）。同时提供一个按钮切换到 Disqus 完整模式下以发表评论。
 
@@ -49,17 +52,18 @@ comment:
 
 ```yaml
 comment:
-  use: disqus_proxy
+  use: disqusjs
   ......
-  disqus_proxy:
-    shortname: # 你的 Disqus shortname
-    apikey: E8Uh5l5fHZ6gD8U3KycjAIAk46f68Zw7C6eW8WSjZvCLXebZ7p0r1yrYDrLilk2F # Disqus 公共 API Key
-    proxy: https://cors-anywhere.herokuapp.com/disqus.com/api/3.0/ # 你的 Disqus 反代地址。你需要反代 https://disqus.com/api/3.0/
+  disqusjs:
+    shortname:
+    siteName:
+    api:
+    apikey:
+    admin:
+    adminLabel:
 ```
 
-上述配置样例中我们使用了 Disqus 的公开 API Key。如果你想使用自己的私有 API Key，登陆 Disqus 后访问 [API - Application](https://disqus.com/api/applications/) 页面创建一个应用，创建后即可使用自己的 Application 的 API Key。请注意个人的 API Key 有 Rate Limit 限制。
-
-> 虽然在配置样例中我们使用了 Cors Anywhere 作为一个反代的例子。但是我们强烈不推荐你使用。Cors Anywhere 是为免费个人性质的站点提供服务的，不适合用于生产环境；在 **公开、平等、有序 的 网络审查 地区** 下的浏览者对 Heroku 的连通性并不比对 Disqus 的连通性好。
+具体配置请阅读 https://github.com/SukkaW/DisqusJS
 
 ## 搜狐畅言
 
@@ -139,7 +143,7 @@ https://valine.js.org
 
 ```yaml
 comment:
-  use: valine # 或者 gitment
+  use: valine
   ......
   valine:
     leancloud_appId: # leancloud application app id
@@ -161,9 +165,9 @@ https://wildfire.js.org
 
 ```yaml
 comment:
-  use: valine # 或者 gitment
+  use: wildfire
   ......
-  valine:
+  wildfire:
     database_provider: firebase # firebase or wilddog
     wilddog_site_id:
     firebase_api_key:
@@ -177,6 +181,27 @@ comment:
 ```
 
 请仔细阅读 [WildFire 的文档](https://wildfire.js.org) 以知晓如何启用、填充上述上述参数。
+
+## Facebook
+
+https://developers.facebook.com/docs/plugins/comments/
+
+```yaml
+comment:
+  use: facebook
+  facebook:
+    colorschme: light # light | dark
+    numposts: 10
+    orderby: social # social | reverse_time | time
+    # You can only fill in one of them below when configuring.
+    # If you fill in both of them then appid method will be used.
+    # Read facebook developer documents for more info:
+    # https://developers.facebook.com/docs/plugins/comments/#moderation-setup-instructions
+    admin_fb_appid:
+    admin_fb_username: # Currently "Suka" don't support more than one admin. You can open a new issue if you really need one.
+```
+
+请仔细阅读 [Facebook Comment Social Plugin](https://developers.facebook.com/docs/plugins/comments/#settings) 以知晓如何启用、填充上述上述参数。
 
 # 站点访问统计
 
@@ -237,22 +262,61 @@ https://web.umeng.com
 
 > 默认脚本生成的内容会产生“站长统计”几个字，「Suka」将其隐藏了起来。
 
+## 腾讯分析
+
+http://ta.qq.com
+
+> 腾讯已不再维护该服务，推荐使用腾讯移动分析
+
+登录腾讯分析控制台，登录并获取分析的 ID，填入 `tencent_site_id` 中。
+
+## 腾讯移动分析
+
+http://mta.qq.com
+
+登录腾讯分析控制台，登录并获取 `tencent_mta` 的 ID，填入 `tencent_mta_id` 中。
+
 # 不蒜子
 
 https://busuanzi.ibruce.info
 
-```yaml
-busuanzi:
-  enable: true # true | false 是否启用不蒜子访问统计
-  # Site views analytics support either pv or uv
-  # will be show at footer
-  site:
-    enable: true # 是否在首页显示
-    type: pv # pv | uv 统计访问次数还是访问人数
-  # Post views analytics
-  # will be show at post header info
-  post_pv:
-    enable: true # 是否在文章页面中显示
-```
+- enable: 是否启用不蒜子计数
+- site_uv: 站点访客统计
+  - enable: 是否在页面上展示站点访客统计数目
+  - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - divider: 站点访客统计展示 与 之后的内容之间的分隔符，支持 HTML，如果你不需要的话可以直接留空配置
+  - offset: 设置 不蒜子 的偏移量（如果你不知道这是干什么用的就保持为 0）
+- site_pv: 站点访问次数统计
+  - enable: 是否在页面上展示站点访问次数数目
+  - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - divider: 站点访问次数展示 与 之后的内容之间的分隔符，支持 HTML，如果你不需要的话可以直接留空配置
+  - offset: 设置 不蒜子 的偏移量（如果你不知道这是干什么用的就保持为 0）
+- post_pv: 每篇文章的访问次数统计
+  - enable: 是否在文章页面上展示页面访问次数数目
+  - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
 
-如果你同时将 `site.enable` `post_pv.enable` 设置为 `false`，不蒜子将仅作记录而不会在页面上显示。
+> 如果你同时将 `site_uv.enable` `site_pv.enable` `post_pv.enable` 设置为 `false`，不蒜子将仅作记录而不会在页面上显示。
+> 你可以使用在 `before` `after` 中使用 HTML Tag，比如用 `<br>` 换行。
+> 每个页面的不蒜子偏移量请在页面的 `front-matter` 中设置，详见 [开始创作 - Front Matter](https://theme-suka.skk.moe/docs/compose/#Front-Matter)。
+
+# Valine 计数器（实验性）
+
+> 这项功能必须搭配 valine 评论系统使用
+
+- enable: 是否启用 valine 计数
+- site_pv: 站点访问次数统计
+  - enable: 是否在页面上展示站点访问次数数目
+  - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - divider: 站点访问次数展示 与 之后的内容之间的分隔符，支持 HTML，如果你不需要的话可以直接留空配置
+- index_post_pv: 在文章列表页面展示每篇文章的访问次数
+  - enable: 是否在文章列表页面展示每篇文章的访问次数
+  - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+- post_pv: 每篇文章的访问次数统计
+  - enable: 是否在文章页面上展示页面访问次数数目
+  - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置

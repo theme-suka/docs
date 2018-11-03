@@ -64,18 +64,10 @@ As the theme is developing, the theme config template will changes. It will avoi
 
 > If you are using git for your Hexo Project or you are using CI to generate and deploy your site, please read [Advanced Setting - CI] for more details.
 
-Now back to the root directory of your Hexo Project, then add these lines after `theme: landscape` in the `site config`.
+Now back to the root directory of your Hexo Project, then run:
 
-```yaml
-# Suka Theme config
-# Documents: https://theme.suka.moe/docs/
-suka_theme:
-  search:
-    path: search.json
-    field: post # Page | Post | All. Default post
-  prism:
-    line_number: true
-    theme: default
+```bash
+cat /themes/suka/site_config.yml >> _config.yml
 ```
 
 Now your `site config` should be something like:
@@ -87,12 +79,14 @@ Now your `site config` should be something like:
 theme: landscape
 
 # Suka Theme config
-# Documents: https://theme.suka.moe/docs/
+# Documents: https://theme-suka.skk.moe/docs/
 suka_theme:
   search:
+    enable: false
     path: search.json
     field: post # Page | Post | All. Default post
   prism:
+    enable: false
     line_number: true
     theme: default
 ```
@@ -109,7 +103,7 @@ Change `theme` key's value to `suka`.
 +theme: suka
 
 # Suka Theme config
-# Documents: https://theme.suka.moe/docs/
+# Documents: https://theme-suka.skk.moe/docs/
 suka_theme:
   search:
     path: search.json
