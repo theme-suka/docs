@@ -1,7 +1,7 @@
 ---
 title: Pages
 permalink: /en/pages/
-description: Verison 1.2.0
+description: Verison 1.3.0
 ---
 
 # Links Page

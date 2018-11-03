@@ -52,19 +52,19 @@ custom_head_3:
 
 > 注意，在这里为代码高亮主题配置了 CDN 会覆盖前面你对代码高亮主题的设置！
 
-## Suka Theme 1.2.0
+## Suka Theme 1.3.0
 
 https://theme-suka.skk.moe https://github.com/SukkaW/hexo-theme-suka
 
 **jsDelivr**
 
 ```yaml
-style_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.2.0/source/css/style.min.css
-local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.2.0/source/js/local-search.min.js
-hanabi_browser_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.2.0/source/js/hanabi-browser.min.js
-highlight_theme: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.2.0/source/css/highlight/[theme-name].min.css
-gallery_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.2.0/source/css/gallery.min.css
-gallery_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.2.0/source/js/gallery.min.js
+style_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/css/style.min.css
+local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/js/local-search.min.js
+hanabi_browser_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/js/hanabi-browser.min.js
+highlight_theme: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/css/highlight/[theme-name].min.css
+gallery_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/css/gallery.min.css
+gallery_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/js/gallery.min.js
 ```
 
 ## Spectre.css 0.5.3
@@ -173,7 +173,7 @@ prisim_theme: https://cdn.jsdelivr.net/npm/color-themes-for-google-code-prettify
 # Fragment Cache
 
 Hexo 从 3.0 开始引入了 Fragment Cache 选项，可以加速 Hexo 站点构建的速度，但是可能会导致一些问题。
-「Suka」主题在 1.2.0 版本之前均强制开启 Fragment Cache，从 1.2.0 版本开始「Suka」提供了可配置选项 `theme.fragment_cache`，默认为 `false`。
+「Suka」主题在 1.3.0 版本之前均强制开启 Fragment Cache，从 1.3.0 版本开始「Suka」提供了可配置选项 `theme.fragment_cache`，默认为 `false`。
 
 ```yaml
 fragment_cache: false # true | false

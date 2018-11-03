@@ -1,7 +1,7 @@
 ---
 title: Theme Config
 permalink: /en/config/
-description: Verison 1.2.0
+description: Verison 1.3.0
 ---
 
 Located to `theme config`.

@@ -49,19 +49,19 @@ If you don't want to use CDN (load files directily from your site), simply leave
 
 Find `vendors:` in `theme config`
 
-## Suka Theme 1.2.0
+## Suka Theme 1.3.0
 
 https://theme-suka.skk.moe https://github.com/SukkaW/hexo-theme-suka
 
 **jsDelivr**
 
 ```yaml
-style_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.2.0/source/css/style.min.css
-local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.2.0/source/js/local-search.min.js
-hanabi_browser_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.2.0/source/js/hanabi-browser.min.js
-highlight_theme: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.2.0/source/css/highlight/[theme-name].min.css
-gallery_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.2.0/source/css/gallery.min.css
-gallery_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.2.0/source/js/gallery.min.js
+style_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/css/style.min.css
+local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/js/local-search.min.js
+hanabi_browser_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/js/hanabi-browser.min.js
+highlight_theme: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/css/highlight/[theme-name].min.css
+gallery_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/css/gallery.min.css
+gallery_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.3.0/source/js/gallery.min.js
 ```
 
 ## Spectre.css 0.5.3
