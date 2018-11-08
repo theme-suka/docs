@@ -214,5 +214,13 @@ head:
 ```yaml
 head:
   ......
-  open_search: path/to/opensearch.xml
+  open_search: /opensearch.xml
+```
+
+接着在 `/source/_posts` 建立 `search.md`：
+
+```markdown
+---
+layout: search
+---
 ```
