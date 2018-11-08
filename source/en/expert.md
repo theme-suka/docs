@@ -206,7 +206,7 @@ head:
   open_search: /opensearch.xml
 ```
 
-Finally create `search.md` in `/source/_posts`:
+Finally create `search.md` in `/source`:
 
 ```markdown
 ---

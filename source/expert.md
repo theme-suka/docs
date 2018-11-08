@@ -217,7 +217,7 @@ head:
   open_search: /opensearch.xml
 ```
 
-接着在 `/source/_posts` 建立 `search.md`：
+接着在 `/source` 建立 `search.md`：
 
 ```markdown
 ---
