@@ -20,6 +20,8 @@ layout: links
 ---
 ```
 
+> title 可以更换为自己喜欢的标题；也可以添加其它 `front-matter`。
+
 ## 添加数据
 
 在站点根目录目录下的 `source` 文件夹内创建一个名为 `_data` 的文件夹。
@@ -59,6 +61,8 @@ date:
 layout: tags
 ---
 ```
+
+> title 可以更换为自己喜欢的标题；也可以添加其它 `front-matter`。
 
 # 画廊
 
@@ -103,3 +107,21 @@ layout: gallery
     thumb: https://i.jpg.dog/img/8975f29cdb459b3a8b1b4f0c8fb0a7af.md.png
     descr: pixiv.net/i/70352475
 ```
+
+# 搜索
+
+## 创建页面
+
+在站点根目录下的 `source` 文件夹内创建一个 `.md` 文件，文件名和路径根据个人喜好决定，会决定渲染生成以后页面的路径。
+
+在文件中写入以下内容：
+
+```markdown
+---
+title: Search
+date:
+layout: search
+---
+```
+
+> title 可以更换为自己喜欢的标题；也可以添加其它 `front-matter`。
