@@ -3,15 +3,15 @@ title: Start
 description: Hello, welcome to「Suka」!
 ---
 
-Hexo is a static site generator which based on [Node.js](https://nodejs.org). You can learn how to install Hexo and generate your own website or blog at [Hexo's Official Documents](https://hexo.io/docs).
+Hexo is a static site generator which is based on [Node.js](https://nodejs.org). You can learn how to install Hexo and generate your own website or blog at [Hexo's Official Documents](https://hexo.io/docs).
 
-> In this documents, we suppose you have already sucessfully installed hexo and used `hexo init` to bring up an site.
+> In this documentation, we suppose you have already successfully installed hexo and finished `hexo init` to set up a site.
 
-There are two config file in Hexo Project, one in the root directory of your Hexo Project and another in the theme directory. For convenience of description, in the following description, the former is referred to as the `site config` and the latter as the `theme config`.
+There are two configuration file in Hexo Project, one in the root directory of your Hexo Project and the other in the theme directory. For the convenience of description, the former is referred to as `site config` and the latter as `theme config`.
 
-Before using "Suka" theme, please read [Hexo's Official Documents](https://hexo.io/docs) carefully and configure the basic config, such as title, subtitle, description, author, timezone, language else.
+Before using "Suka" theme, please read [Hexo's Official Documents](https://hexo.io/docs) carefully and configure the basic configuration, such as title, subtitle, description, author, timezone, language etc.
 
-# Download "Suka"
+# Download desired versions
 
 [Download latest Release](https://github.com/SukkaW/hexo-theme-suka/releases/latest)
 
@@ -19,24 +19,24 @@ Before using "Suka" theme, please read [Hexo's Official Documents](https://hexo.
 
 [Download latest Canary Branch](https://github.com/SukkaW/hexo-theme-suka/archive/canary.zip)
 
-> Maybe unstable, but includes latest features. Recommended for developers or advanced users.
+> This build may be unstable, but it includes the latest features. Recommended for developers and advanced users.
 
 [Download other version](https://github.com/SukkaW/hexo-theme-suka/releases)
 
-> You can decide which version to use. May no longer provide support.
+> You can decide which version to use. Some releases are no longer supported.
 
-Choose your the one you want to use, find `Assets` in new page, download Source Code (zip).
-Here is an example of download version 0.2.0:
+Choose the version you want to deploy, expand `Assets` tab in releases page, and download Source Code (zip).
+Here is an example of downloading version 0.2.0:
 
 ![](/docs/assets/img/download-suka.png)
 
-Unpack it and rename it to `suka`, then move it to `themes` directory of your Hexo Project.
+Unpack it and rename it to `suka`, and then move it to `themes` directory of your Hexo Project.
 
 ----
 
 [Using Git](https://github.com/SukkaW/hexo-theme-suka)
 
-In this way you can decide which version and branch you want to use. You can use `git pull` to update the "Suka" if you are using this way.
+With git you can decide which version and branch you want to use. You can use `git pull` to update the theme if you goes this way.
 
 ```bash
 cd themes
@@ -47,30 +47,30 @@ git checkout {branch/tags name/commit hash}
 
 # Install "Suka"
 
-When install "Suka" you need extra steps which is diffrent from other theme. First you need to enter themes directory and install dependencies for "Suka".
+When installing "Suka" you need extra steps which is diffrent from other themes. First you need to enter themes directory and install dependencies for "Suka".
 
 ```bash
 cd themes/suka
 npm install --production
 ```
 
-Then you need to make a copy of `_config.example.yml` and rename the copy to `_config.yml`.
+Then you need to make a copy of `_config.example.yml` and rename it to `_config.yml`.
 
 ```bash
 cp -i _config.example.yml _config.yml
 ```
 
-As the theme is developing, the theme config template will changes. It will avoid conflict for users who are using git pull to upgrade the theme.
+With the theme being developed, the theme config template will change. By copying the config you can avoid potential conflicts for users who use git pull to upgrade the theme.
 
 > If you are using git for your Hexo Project or you are using CI to generate and deploy your site, please read [Advanced Setting - CI] for more details.
 
-Now back to the root directory of your Hexo Project, then run:
+Now go back to the root directory of your Hexo Project, then execute:
 
 ```bash
-cat /themes/suka/site_config.yml >> _config.yml
+cat themes/suka/site_config.yml >> _config.yml
 ```
 
-Now your `site config` should be something like:
+Now your `site config` should look like:
 
 ```yaml
 # Extensions
@@ -121,22 +121,22 @@ Run the command below to start a local Hexo Server.
 hexo s --debug
 ```
 
-> During the service startup process, pay attention to whether there are any abnormal information. If you want to report problems, those information will help.
+> During the service startup process, pay attention any abnormal outputs. If you want to report issues, those information will help.
 
-When there were something like lines below
+When the output looks like the lines below
 
 ```
 INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
 ```
 
-It means Hexo has already run on your device, check https://localhost:400 at your browser.
+It means Hexo is already running on your device, check https://localhost:400 in your browser.
 
-> If you have problem using "Suka", try search in the docs at sidebar or [add new issue](https://github.com/SukkaW/hexo-theme-suka/issues/new) at GitHub.
+> If you have any problem using "Suka", try searching in the documentation at sidebar or [open new issue](https://github.com/SukkaW/hexo-theme-suka/issues/new) at GitHub.
 
 # Update "Suka"
 
-If you downloaded "Suka" at GitHub release, then you should rename your theme directory from `suka` to `suka-old`, rename the new version "Suka" directory to `suka`. Then follow the guide at change log to migrate your configuration into newer one. After test you can delete `suka-old` directory.
+If you downloaded "Suka" from a  GitHub release, you should rename your theme directory from `suka` to `suka-old`, and rename the newer version of "Suka" directory to `suka`. Then follow the guide at changelog to migrate your configuration to the newer version. You can delete `suka-old` directory afterwards if you want.
 
 ---
 
-If you used git to download "Suka", you need to backup your `theme config` (for example, rename it to `_config.old.yml`) then run `git pull` to update the "Suka". Now you have a new `_config.example.yml`, make a copy of it and rename the copy to `_config.yml`. Now you can migrate your old `theme config` from `_config.old.yml` to `_config.yml`. After the test you can delete `_config.old.yml`.
+If you use git to download "Suka", you need to backup your `theme config` (for example, rename it to `_config.old.yml`), and then run `git pull` to update "Suka". You will see a new `_config.example.yml`. Make a copy of it and rename it as `_config.yml`. Now you can migrate your settings from `_config.old.yml` to `_config.yml`. After the test you can delete `_config.old.yml`.
