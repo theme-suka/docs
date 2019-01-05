@@ -7,7 +7,7 @@ Hexo is a static site generator which is based on [Node.js](https://nodejs.org).
 
 > In this documentation, we suppose you have already successfully installed hexo and finished `hexo init` to set up a site.
 
-There are two configuration file in Hexo Project, one in the root directory of your Hexo Project and the other in the theme directory. For the convenience of description, the former is referred to as `site config` and the latter as `theme config`.
+There are two configuration files in Hexo Project, one in the root directory of your Hexo Project and the other in the theme directory. For the convenience of description, the former is referred to as `site config` and the latter as `theme config`.
 
 Before using "Suka" theme, please read [Hexo's Official Documents](https://hexo.io/docs) carefully and configure the basic configuration, such as title, subtitle, description, author, timezone, language etc.
 
