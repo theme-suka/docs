@@ -96,7 +96,7 @@ https://github.com/PrismJS/prism/ https://github.com/PrismJS/prism-themes
 **jsDelivr**
 
 ```yaml
-theme: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@latestsource/lib/prism/prism-{theme-name}.css
+theme: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@latest/lib/prism/prism-{theme-name}.css
 line_number: https://cdn.jsdelivr.net/npm/prismjs@1.15.0/plugins/line-numbers/prism-line-numbers.min.css
 ```
 
