@@ -173,11 +173,13 @@ Some other configuration of your pages' entry.
 
 ```yaml
     Name:
-        link: "/about/"
+        link: '/about/'
+        attr: 'target="_blank" rel="noopener"'
 ```
 
 It is a unit of an entry to pages. You can add muilt entries for your other pages.
 
+`Name` is name of a page, `link` is link of a page, `attr` is additional attributes append to `<a>` tag, which can be used to make page open in new tab.
 
 ## sns_share
 
