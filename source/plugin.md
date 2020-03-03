@@ -24,6 +24,7 @@ search:
 ```yaml
 suka_theme:
   search:
+    enable: true
     path: search.json # 生成索引文件的位置
     field: post # Page | Post | All
 ```
