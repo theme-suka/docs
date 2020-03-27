@@ -8,7 +8,7 @@ description: Don't try what you about to see at home. These are for experts.
 
 # Using Git with Hexo
 
-As we said at the [Strat Using](/docs/en/), we use `_config.example.yml` to avoid conflict in git.
+As we said at the [Start](/docs/en/), we use `_config.example.yml` to avoid conflict in git.
 
 We also add `_config.yml` to `.gitignore` to prevent our theme config pushing into theme repo. However, it will cause your `theme config` not be pushed. You need to remove `_config.yml` in `.gitignore`. If you do that, there may be some conflict when you are uing `git pull` to upgrade "Suka".
 

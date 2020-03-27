@@ -21,7 +21,7 @@ Before using "Suka" theme, please read [Hexo's Official Documents](https://hexo.
 
 > This build may be unstable, but it includes the latest features. Recommended for developers and advanced users.
 
-[Download other version](https://github.com/SukkaW/hexo-theme-suka/releases)
+[Download other versions](https://github.com/SukkaW/hexo-theme-suka/releases)
 
 > You can decide which version to use. Some releases are no longer supported.
 
@@ -62,7 +62,7 @@ cp -i _config.example.yml _config.yml
 
 With the theme being developed, the theme config template will change. By copying the config you can avoid potential conflicts for users who use git pull to upgrade the theme.
 
-> If you are using git for your Hexo Project or you are using CI to generate and deploy your site, please read [Advanced Setting - CI] for more details.
+> If you are using git for your Hexo Project or you are using CI to generate and deploy your site, please read [Advanced Using - Using Git with Hexo](/docs/en/expert/#Using-Git-with-Hexo) for more details.
 
 Now go back to the root directory of your Hexo Project, then execute:
 
@@ -82,7 +82,7 @@ theme: landscape
 # Documents: https://theme-suka.skk.moe/docs/
 suka_theme:
   search:
-    enable: false
+    enable: true
     path: search.json
     field: post # Page | Post | All. Default post
   prism:
@@ -121,7 +121,7 @@ Run the command below to start a local Hexo Server.
 hexo s --debug
 ```
 
-> During the service startup process, pay attention any abnormal outputs. If you want to report issues, those information will help.
+> During the service startup process, pay attention to any abnormal outputs. If you want to report issues, those information will help.
 
 When the output looks like the lines below
 
@@ -137,6 +137,6 @@ It means Hexo is already running on your device, check https://localhost:400 in 
 
 If you downloaded "Suka" from a  GitHub release, you should rename your theme directory from `suka` to `suka-old`, and rename the newer version of "Suka" directory to `suka`. Then follow the guide at changelog to migrate your configuration to the newer version. You can delete `suka-old` directory afterwards if you want.
 
----
+----
 
 If you use git to download "Suka", you need to backup your `theme config` (for example, rename it to `_config.old.yml`), and then run `git pull` to update "Suka". You will see a new `_config.example.yml`. Make a copy of it and rename it as `_config.yml`. Now you can migrate your settings from `_config.old.yml` to `_config.yml`. After the test you can delete `_config.old.yml`.

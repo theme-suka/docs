@@ -182,7 +182,7 @@ fragment_cache: false # true | false
 # PWA Manifest
 
 如果你的站点启用了 HTTPS，并启用了 Service Worker，你就可以为你的站点启用 Progressive Web App（PWA）支持。
-要启用 PWA 首先需要一个 `manifest.json` 文件。你可以在 [MDN 关于 Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) 的文档上找到相关资料。你还可以在 [Web App Minifest Generator](https://app-manifest.firebaseapp.com/) 上快速生成一个 `manifest.json`
+要启用 PWA 首先需要一个 `manifest.json` 文件。你可以在 [MDN 关于 Web App Manifest](https://developer.mozilla.org/zh-CN/docs/Web/Manifest) 的文档上找到相关资料。你还可以在 [Web App Minifest Generator](https://app-manifest.firebaseapp.com/) 上快速生成一个 `manifest.json`
 
 将 `manifest.json` 放置在站点的 `source` 目录中，并在 `主题配置文件` 中找到 `pwa_manifest`，配置你的 `manifest.json` 的地址：
 
@@ -196,7 +196,7 @@ head:
 
 「Suka」的本地搜索功能支持通过搜索串搜索，在使用本地搜索时可以启用 Open Search。
 
-> 你可以在 [MDN](https://developer.mozilla.org/en-US/docs/Web/OpenSearch) 上或者 [OpenSearch 的项目主页](https://github.com/dewitt/opensearch) 中了解更多关于 OpenSearch。
+> 你可以在 [MDN](https://developer.mozilla.org/zh-CN/docs/Mozilla/Add-ons/Creating_OpenSearch_plugins_for_Firefox) 上或者 [OpenSearch 的项目主页](https://github.com/dewitt/opensearch) 中了解更多关于 OpenSearch。
 
 在这里提供了一份最基础的 Open Search 的定义文件以在大部分浏览器中启用 Open Search：
 

@@ -58,7 +58,7 @@ description: Verison 1.3.0
 
 2. 将 `xxxxxxxxxxxxxxxx` 字符串复制出来，填入 `主题配置文件` 中对应搜索引擎的设置中，站点重新部署以后即可通过验证。
 
-> 如果你使用了 [第三方服务 - 站点访问统计](https://theme-suka.skk.moe/docs/service/#Google) 启用了 Google Analytics，可以直接在 Google Webmaster 验证，无需再次使用 html 标记验证。
+> 如果你使用了 [第三方服务 - Google Analytics](/docs/service/#Google) ，可以直接在 Google Webmaster 验证，无需再次使用 html 标记验证。
 
 ## Footer
 
@@ -233,7 +233,7 @@ post:
   license: '本文使用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)</a> 协议'
 ```
 
-你也可以在文章的 `Front-Matter` 中覆盖这一设置，从而为你的部分文章设置独立的、不同的协议信息，详情可见 [开始创作 - Front Matter](https://theme-suka.skk.moe/docs/compose/#Front-Matter)
+你也可以在文章的 `Front-Matter` 中覆盖这一设置，从而为你的部分文章设置独立的、不同的协议信息，详情可见 [开始创作 - Front Matter](/docs/compose/#Front-Matter)
 
 # toc
 
@@ -243,7 +243,7 @@ post:
 
 是否启用。
 
-> 如果你想在部分文章中禁用 ToC，你可以在 `Front-Matter` 中覆盖这一设置，详情可见 [开始创作 - Front Matter](#)
+> 如果你想在部分文章中禁用 ToC，你可以在 `Front-Matter` 中覆盖这一设置，详情可见 [开始创作 - Front Matter](/docs/compose/#Front-Matter)
 
 **line_number**
 

@@ -25,7 +25,7 @@ You can generate those needed favicon [here](https://realfavicongenerator.net). 
 
 **color**
 
-It will change the color of visitor's Android Chrome Appbar Color and Safari Toolbar.
+It will change the color of visitor's Android Chrome Appbar and Safari Toolbar.
 
 > If you leave this option blank but configure the site background color below, the toolbar color will fallback to the background color you configured.
 
@@ -52,13 +52,13 @@ You can get your site_verification value by doing:
 
 After logged in the console of search engine, choose to use `<meta>` tag to finish the verification. Then console will give you something like:
 
-```
-<meta name="xxxx-site-verification" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+```html
+<meta name="xxxx-site-verification" content="xxxxxxxxxxxxxxxx" />
 ```
 
-The things like xxxxxxxxxxxxxxxxxxxxxxxxxxxx is your site_verification value.
+The things like `xxxxxxxxxxxxxxxx` is your site_verification value.
 
-> If you use the google anylytics for your site by configure as [Third Party Services - Analytics](https://theme-suka.skk.moe/docs/en/service/#Google) mentioned, you can pass Google Webmaster Verification without any other action.
+> If you use [Third Party Services - Google](/docs/en/service/#Google) for your site, you can pass Google Webmaster Verification without any other action.
 
 ## Footer
 
@@ -81,7 +81,6 @@ footer:
 ```
 
 Another example, you host your site on Coding Pages. To avoid the ad redirect page, you can configure it as:
-
 
 ```yaml
 footer:
@@ -117,7 +116,6 @@ uiux:
 
 An example for muilt line slogan:
 
-
 ```yaml
 uiux:
   # Muilt line slogan is supported.
@@ -137,7 +135,6 @@ The primary color of the theme, will be used at some button components.
 **bg_color**
 
 The background color.
-
 
 ## img
 
@@ -178,12 +175,11 @@ Some other configuration of your pages' entry.
 
 It is a unit of an entry to pages. You can add muilt entries for your other pages.
 
-
 ## sns_share
 
-Ddefined the menu items which will be shown in share menu.
+Defined the menu items which will be shown in share menu.
 
-"Suka" support to share your site or posts to those socail media:
+"Suka" supports to share your site or posts to those social media:
 
 - weibo
 - facebook
@@ -211,11 +207,11 @@ Whether to show qrcode in share menu for posts & pages, `true` or `false`.
 
 ## entry_excerpt
 
-You should always use `<!-- more -->` to cut your post more accurately. If you don't have `<!-- more -->` in some posts the home page outputs the character length of the digest you configured here.
+It's recommended to use `<!-- more -->` to cut your post more accurately at any time. If you don't have `<!-- more -->` in some posts the home page outputs the character length of the digest you configured here.
 
 ## expire
 
-When you set it true, visitor can see some notify like `This article was last updated on %s days ago, and the information described in the article may have changed.` at the end of your post which hasn't been modified for more than 90 days.
+When you set it true, visitor can see some notification like `This article was last updated on %s days ago, and the information described in the article may have changed.` at the end of your post which hasn't been modified for more than 90 days.
 
 ## share
 
@@ -225,7 +221,7 @@ Enable share menu for posts and pages or not.
 
 You can configure the copyrights of your posts here, which will be shown at the end of your post; HTML Tag is supported. The license will includes author, permalinks and your copyright.
 
-For instance, you can configure Creative Commons as:
+For instance, you can configure Creative Commons Attribution licenses as:
 
 ```yaml
 post:
@@ -233,7 +229,7 @@ post:
   license: 'The page is under<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0 International</a>'
 ```
 
-You can also override the configuration for some specific posts by adding front-matter, see [Compose - Front Matter](https://theme-suka.skk.moe/docs/en/compose/#Front-Matter) for more details.
+You can also override the configuration for some specific posts by adding front-matter, see [Compose - Front Matter](/docs/en/compose/#Front-Matter) for more details.
 
 # toc
 
@@ -243,7 +239,7 @@ Configuration for Table of Content
 
 Enable it or not.
 
-> If you want override the configuration for some specific posts you can add the related front-matter, see [Compose - Front Matter](https://theme-suka.skk.moe/docs/en/compose/#Front-Matter) for more details.
+> If you want override the configuration for some specific posts you can add the related front-matter, see [Compose - Front Matter](/docs/en/compose/#Front-Matter) for more details.
 
 **line_number**
 

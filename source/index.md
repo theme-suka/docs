@@ -67,7 +67,7 @@ cp -i _config.example.yml _config.yml
 然后回到站点根目录，执行：
 
 ```bash
-cat /themes/suka/site_config.yml >> _config.yml
+cat themes/suka/site_config.yml >> _config.yml
 ```
 
 现在你的 `站点配置文件` 应该是这样：
@@ -82,7 +82,7 @@ theme: landscape
 # Documents: https://theme-suka.skk.moe/docs/
 suka_theme:
   search:
-    enable: false
+    enable: true
     path: search.json
     field: post # Page | Post | All. Default post
   prism:

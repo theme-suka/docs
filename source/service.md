@@ -79,15 +79,13 @@ comment:
     thread_key_type: path # 可选 id 或 path
 ```
 
-在畅言的后台找到安装方式，畅言应该提供了下述两个代码，你可以从其中找到你的 APPID 和 CONF：
+在畅言的后台找到安装方式，畅言应该提供了下述两个代码，你可以从其中找到你的 `APPID` 和 `CONF`：
 
 ```html
 <!-- 畅言公共 js 代码 start -->
 <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId={这个就是你的 APPID}">
 </script>
 <!-- 畅言公共 js 代码 end -->
-```
-```html
 <script>
 (function(){
 var appid = '{这个就是你的 APPID}';
@@ -98,7 +96,7 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" src="http
 </script>
 ```
 
-请注意，搜狐畅言提供两种文章的区分方式，`id` 和 `path`（文章目录）。虽然在每次执行 `hexo g` 时每一篇文章都会被赋予一个 `page.id` 变量，但不唯一（该 id 和文章的对应关系存放在 Hexo Database 中，每次 `hexo clean` 时 Database 会被删除），所以如果使用 id 区分文章，你需要在每篇文章的 Front-Matter 中手动添加 id。所以我们推荐使用 `path`，除非你的站点的文章链接经常变动。
+请注意，搜狐畅言提供两种文章的区分方式，`id` 和 `path`（文章目录）。虽然在每次执行 `hexo g` 时每一篇文章都会被赋予一个 `page.id` 变量，但不唯一（该 id 和文章的对应关系存放在 Hexo Database 中，每次 `hexo clean` 时 Database 会被删除），所以如果使用 `id` 区分文章，你需要在每篇文章的 Front-Matter 中手动添加 id。所以我们推荐使用 `path`，除非你的站点的文章链接经常变动。
 
 ## 来必力 (livere)
 
@@ -284,23 +282,23 @@ https://busuanzi.ibruce.info
 - site_uv: 站点访客统计
   - enable: 是否在页面上展示站点访客统计数目
   - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
-  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之后显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
   - divider: 站点访客统计展示 与 之后的内容之间的分隔符，支持 HTML，如果你不需要的话可以直接留空配置
   - offset: 设置 不蒜子 的偏移量（如果你不知道这是干什么用的就保持为 0）
 - site_pv: 站点访问次数统计
   - enable: 是否在页面上展示站点访问次数数目
   - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
-  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之后显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
   - divider: 站点访问次数展示 与 之后的内容之间的分隔符，支持 HTML，如果你不需要的话可以直接留空配置
   - offset: 设置 不蒜子 的偏移量（如果你不知道这是干什么用的就保持为 0）
 - post_pv: 每篇文章的访问次数统计
   - enable: 是否在文章页面上展示页面访问次数数目
   - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
-  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之后显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
 
 > 如果你同时将 `site_uv.enable` `site_pv.enable` `post_pv.enable` 设置为 `false`，不蒜子将仅作记录而不会在页面上显示。
-> 你可以使用在 `before` `after` 中使用 HTML Tag，比如用 `<br>` 换行。
-> 每个页面的不蒜子偏移量请在页面的 `front-matter` 中设置，详见 [开始创作 - Front Matter](https://theme-suka.skk.moe/docs/compose/#Front-Matter)。
+> 你可以在 `before` `after` 中使用 HTML Tag，比如用 `<br>` 换行。
+> 每个页面的不蒜子偏移量请在页面的 `front-matter` 中设置，详见 [开始创作 - Front Matter](/docs/compose/#Front-Matter)。
 
 # Valine 计数器（实验性）
 
@@ -310,13 +308,13 @@ https://busuanzi.ibruce.info
 - site_pv: 站点访问次数统计
   - enable: 是否在页面上展示站点访问次数数目
   - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
-  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之后显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
   - divider: 站点访问次数展示 与 之后的内容之间的分隔符，支持 HTML，如果你不需要的话可以直接留空配置
 - index_post_pv: 在文章列表页面展示每篇文章的访问次数
   - enable: 是否在文章列表页面展示每篇文章的访问次数
   - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
-  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之后显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
 - post_pv: 每篇文章的访问次数统计
   - enable: 是否在文章页面上展示页面访问次数数目
   - before: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
-  - after: 统计数目之前显示的内容，支持 HTML，如果你不需要的话可以直接留空配置
+  - after: 统计数目之后显示的内容，支持 HTML，如果你不需要的话可以直接留空配置

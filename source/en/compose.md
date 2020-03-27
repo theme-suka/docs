@@ -17,9 +17,9 @@ Add a markdown file (`.md`) in `source/_posts` folder of your hexo project.
 
 # Front-Matter
 
-[Hexo Documents - Front-Matter](https://hexo.io/zh-cn/docs/front-matter.html)
+[Hexo Documents - Front-Matter](https://hexo.io/docs/front-matter.html)
 
-"Suka" not only support the option in hexo documents mentioned above, bus also support those extended front-matter below:
+"Suka" not only supports the option in hexo documents mentioned above, bus also those extended front-matter below:
 
 | Name          | Description                | Default Valu      |
 |:--            |:--                         |:--                |
