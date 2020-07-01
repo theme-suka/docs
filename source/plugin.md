@@ -6,7 +6,9 @@ description: Verison 1.3.0
 
 # 搜索
 
-「Suka」主题支持三种搜索引擎，分别是本地搜索、Google 搜索和 Swiftype
+「Suka」主题支持三种搜索引擎，分别是本地搜索、Google 搜索和 Swiftype。
+
+在设置搜索前，请参考 [独立页面](/docs/pages/) 相关文档、新建搜索页面。
 
 ## 本地搜索
 
