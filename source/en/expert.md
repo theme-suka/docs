@@ -203,5 +203,13 @@ Fill in template and save as `opensearch.xml` to your `source` directory in site
 ```yaml
 head:
   ......
-  open_search: path/to/opensearch.xml
+  open_search: /opensearch.xml
+```
+
+Finally create `search.md` in `/source`:
+
+```markdown
+---
+layout: search
+---
 ```
