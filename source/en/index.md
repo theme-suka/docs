@@ -129,7 +129,7 @@ When the output looks like the lines below
 INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
 ```
 
-It means Hexo is already running on your device, check https://localhost:400 in your browser.
+It means Hexo is already running on your device, check https://localhost:4000 in your browser.
 
 > If you have any problem using "Suka", try searching in the documentation at sidebar or [open new issue](https://github.com/SukkaW/hexo-theme-suka/issues/new) at GitHub.
 
